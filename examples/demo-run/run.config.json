@@ -1,5 +1,5 @@
 {
-  "target": "http://127.0.0.1:8765/",
+  "target": "http://localhost:8765/",
   "target_type": "live",
   "product": "Larder",
   "date": "2026-10-25",

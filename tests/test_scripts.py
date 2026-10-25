@@ -294,11 +294,13 @@ class TestPicker(unittest.TestCase):
         self.assertNotIn(b"Acme </script>", picker.Handler.page)
         picker.Handler.outdir = self.tmp
         picker.Handler.lib = lib
-        srv = picker.ThreadingHTTPServer(("127.0.0.1", 0), picker.Handler)
+        srv = picker.ThreadingHTTPServer((picker.BIND_HOST, 0), picker.Handler)
         picker.Handler.on_saved = srv.shutdown
         t = threading.Thread(target=srv.serve_forever, daemon=True)
         t.start()
-        base = "http://127.0.0.1:%d" % srv.server_address[1]
+        port = srv.server_address[1]
+        self.assertEqual(picker.local_url(port), "http://localhost:%d/" % port)
+        base = "http://%s:%d" % (picker.BIND_HOST, port)
         try:
             with urllib.request.urlopen(base + "/") as r:
                 self.assertIn(b"Cast picker", r.read())

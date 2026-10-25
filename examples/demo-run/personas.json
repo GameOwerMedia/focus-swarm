@@ -1,6 +1,6 @@
 {
   "run": {
-    "target": "http://127.0.0.1:8765/",
+    "target": "http://localhost:8765/",
     "target_type": "live",
     "product": "Larder",
     "panels": { "general": 4, "commercial": 2, "consumers": 3, "regulators": 2, "press": 1, "capital": 3 },

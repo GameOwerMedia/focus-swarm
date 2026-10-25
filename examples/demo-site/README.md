@@ -18,10 +18,10 @@ source do not get the answers for free.
 ## Serve it
 
 ```bash
-python -m http.server 8765 --bind 127.0.0.1 -d examples/demo-site
+python -m http.server 8765 --bind localhost -d examples/demo-site
 ```
 
-Then use `http://127.0.0.1:8765/` as the target in the picker. Any free port
+Then use `http://localhost:8765/` as the target in the picker. Any free port
 works; 8765 is only the one used for the recorded run in
 [`../demo-run/`](../demo-run/).
 

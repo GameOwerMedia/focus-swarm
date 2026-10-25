@@ -18,7 +18,8 @@ Static (writes picker.html you can open from disk; it downloads run.config.json)
 
 Writes <outdir>/run.config.json with: target, target_type, product, date,
 panels (id -> headcount), panel_order, real_people (panel ids), lang, notes.
-The server binds to 127.0.0.1 only and stops itself after the config is saved.
+The server listens on the loopback interface only, shows its address as
+http://localhost:<port>/ and stops itself after the config is saved.
 """
 
 import argparse
@@ -32,6 +33,14 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 import _common as C
 import _theme as T
+
+BIND_HOST = "127.0.0.1"  # loopback only: the page is never reachable from other machines
+
+
+def local_url(port):
+    """The address shown to the user for a picker served on BIND_HOST."""
+    return "http://localhost:%d/" % port
+
 
 LANGS = [("en", "English"), ("de", "Deutsch"), ("es", "Español"), ("fr", "Français"),
          ("it", "Italiano"), ("nl", "Nederlands"), ("pl", "Polski"), ("pt", "Português"),
@@ -538,9 +547,9 @@ def main(argv=None):
     Handler.page = render(base, lib).encode("utf-8")
     Handler.outdir = outdir
     Handler.lib = lib
-    srv = ThreadingHTTPServer(("127.0.0.1", ns.port), Handler)
+    srv = ThreadingHTTPServer((BIND_HOST, ns.port), Handler)
     Handler.on_saved = srv.shutdown
-    url = "http://127.0.0.1:%d/" % srv.server_address[1]
+    url = local_url(srv.server_address[1])
     print("cast picker: %s  (waiting for the cast)" % url)
     sys.stdout.flush()
     if ns.open:
