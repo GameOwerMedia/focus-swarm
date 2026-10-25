@@ -1,0 +1,16 @@
+{
+  "run": { "target": "https://example.com/", "target_type": "live", "product": "Acme Notes" },
+  "personas": [
+    { "id": "general01", "group": "general", "name": "Ada Example", "age": 61, "role": "retired librarian",
+      "location": "Springfield", "background": "Reads on a tablet.", "history": "Burned by a trial once.",
+      "disposition": "skeptical", "real_person": false, "lens": "Large text and plain prices.",
+      "device": "tablet", "tech_literacy": "low", "access_needs": ["low vision"] },
+    { "id": "consumers01", "group": "consumers", "name": "Ben Sample", "age": 29, "role": "nurse",
+      "location": "Riverton", "background": "Buys apps on impulse.", "history": "Many cancelled subscriptions.",
+      "disposition": "interested", "real_person": false, "lens": "Impulse purchase." },
+    { "id": "capital01", "group": "capital", "name": "Cleo Placeholder", "age": 44, "role": "partner",
+      "org": "Fictional Seed Fund", "location": "Metropolis", "background": "Pre-seed consumer investor.",
+      "history": "Saw meal kits churn.", "disposition": "hostile", "real_person": false,
+      "lens": "Retention.", "stage_focus": "pre-seed", "ticket_range": "250-500k USD" }
+  ]
+}

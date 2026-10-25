@@ -1,0 +1,146 @@
+{
+  "id": "capital03",
+  "group": "capital",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the home page and read the hero, six feature tiles, the single quote and the video block",
+    "Opened /pricing at laptop width and at phone width (390 px), read the plan table, the footnote and all four FAQ answers",
+    "Opened /signup and read every field, the step line and the small print under the button",
+    "Opened /privacy and read it start to finish",
+    "Read the stylesheet for text contrast, the table minimum width, input font size and the small-screen rules",
+    "Looked at rendered pages: home and pricing at both widths, sign-up at laptop width. No phone render of the sign-up page was available, so I judged that one from the markup and styles",
+    "Did not submit the form. I would have typed a throwaway email, stopped before the card number, and not gone further"
+  ],
+  "name": "Aiko Matsuda",
+  "age": 38,
+  "role": "Principal",
+  "org": "Ridgeline Ventures",
+  "location": "San Francisco, US",
+  "real_person": false,
+  "background": "Series A investor in consumer and fintech. Publicly skeptical of 'save money' consumer apps whose savings are never measured.",
+  "history": "Passed on a dozen food-waste startups. Watched two of them die on retention after month three.",
+  "disposition": "hostile",
+  "first_10s": "Fridge, shared, scan. OK. 'Know what's in the fridge before you shop.' Nice line. Where's the number? 'Free for 14 days' in grey 13 px under the button, which I can barely read. Phone mock-up with a joke about mustard. No screenshot of the real app, no store badge, iOS 'soon', Android 'later this year', web app 'works today' and nothing to click to open it. So there may be no product yet. Video: 'coming soon'. Great, third dead end on one page. I'm going to pricing, because that's where the revenue model lives.",
+  "journey": [
+    "Landed on home. Read the hero. 'Start your free trial' and 'See how it works' are the two buttons; the second scrolls to a grey box that says the tour video is coming soon.",
+    "Looked for the web app that 'works today'. No link anywhere. The only path in is the sign-up form.",
+    "Read the feature tiles. 'Waste report: Most households save more than the subscription.' No figure, no study, no n. Noted it and moved on.",
+    "Clicked Pricing. $0, $3.99/mo*, $6.99/mo*. The asterisk means annual billing, $47.88 and $83.88. The monthly prices are in a collapsed FAQ under 'Can I pay monthly?': $5.99 and $9.99. That is 50% and 43% above the headline price.",
+    "Compared the tiers. The waste report is only on Family+. The tier most people will pick (Household, labelled 'Most popular') does not include the waste report, which is the one feature the savings claim depends on.",
+    "Opened the FAQ about the card. 'It keeps the trial smooth for your whole household.' That is not a reason. It is a card-on-file trial.",
+    "Opened pricing at phone width. The table has a 760 px minimum, so on 390 px I see Starter fully, Household cut off at the right edge and Family+ not at all. No scroll hint. The 'Start 14-day trial' button on the highlighted plan is cut in half.",
+    "Went to sign-up. One screen: email, password of 12 or more characters, full card number, expiry, CVC. The step line says '1. Account > 2. Payment > 3. Invite your household', but account and payment are the same screen and step 3 never appears.",
+    "Read the line above the form: 'You won't be charged today. Your Household plan ($47.88/year) starts after the trial.' It names Household even if I came from the Family+ button. The form has no plan selector.",
+    "Read the small print under the button: 'you agree to our Terms and Privacy notice, including partner offers.' Consent to partner offers is folded into the terms. There is no Terms link, only Privacy.",
+    "Read privacy. Items, receipts with prices, household members' names and emails. 'May share anonymised and aggregated shopping insights with retail and brand partners.' So there is a data revenue line, and I can't tell whether it is the business or a side project. Deletion is by email, within 30 days.",
+    "Stopped at the card number field. Closed the tab."
+  ],
+  "usability": {
+    "score": 55,
+    "completed_main_task": false,
+    "blockers": [
+      "The main promise (a live shared pantry) cannot be tried. No web app link, no demo, no screenshot of the real product, no video. The only action available is to hand over a card.",
+      "The savings claim cannot be checked anywhere on the site, and the waste report that would measure it sits on the top tier only."
+    ],
+    "friction": [
+      "Phone: the pricing table scrolls sideways with no cue. Household is cut off and Family+ is out of sight, so a phone visitor cannot compare plans without discovering the swipe.",
+      "Headline price is the annual-billed price per month. The real monthly price is hidden in a closed FAQ.",
+      "The trial requires a full card on the first screen, before the user has seen the product.",
+      "The sign-up form has no plan selector but the copy states Household, whichever button you came from.",
+      "Step line promises three steps. Two of them are the same screen and the third is never shown.",
+      "Muted grey text (#9aa59f on white, about 2.5:1) carries the trial terms, the price footnote with the billing basis and the step line. The legally important parts are the least legible.",
+      "Input text is 15 px, which makes iOS Safari zoom the page on focus. The card fields carry no autocomplete hints, so autofill of the card will be unreliable on a phone.",
+      "Partner-offer consent is bundled into the terms line."
+    ]
+  },
+  "works": [
+    "The one-sentence pitch is clear and the shared-household framing is a real wedge for flatshares and families.",
+    "The trial terms are written down in three places (pricing footnote, FAQ, sign-up line). I could find the conversion to an annual plan.",
+    "Privacy page is short and does state the data-sharing line. A bad line, but it is not buried.",
+    "Starter tier is free with no card (the 'Start free' button goes to the same card form, so I could not confirm that)."
+  ],
+  "fails": [
+    "'Most households save more than the subscription' is stated as fact with no number, no sample and no method. On a $47.88 plan, that means they claim at least $48 a year of avoided waste per household. For comparison, the usual published household food-waste figures are in the hundreds of dollars a year, so the claim is possible. The site does not show that they measure it.",
+    "The waste report is in Family+ only. So the measurement that would prove the claim is gated behind the $83.88 tier, and the Household buyer gets no feedback on whether the claim is true for them.",
+    "The headline monthly prices are the annual-billed price divided by twelve. Monthly is $5.99 and $9.99.",
+    "No retention evidence of any kind. The only social proof is one quote from 'a beta household of four' with no name.",
+    "'Free' trial that needs a card and auto-converts to an annual charge of $47.88 or $83.88 is a customer-acquisition trick, and it is also a refund and chargeback problem.",
+    "Web app 'works today' but nothing links to it."
+  ],
+  "missing": [
+    "Any measured outcome: kg or dollars of waste avoided, with a control group or before/after, per household.",
+    "Any retention number: week-4, month-3 and month-6 active households, and paid retention by plan.",
+    "Waste report example on Household, or a free preview of it.",
+    "A real screenshot or a working demo of the actual product.",
+    "Whether the annual-by-default conversion changes after the first year, and what the refund policy is.",
+    "Terms of Service link.",
+    "Who the founders are and what their data-sharing deals are, if any.",
+    "Where receipt-scan accuracy is reported. 'Most major supermarkets in US and UK' is not a metric."
+  ],
+  "said": [
+    "Okay so this is the fourth fridge app I've looked at this year. The pitch is nice. I do not see one number on this site.",
+    "'Most households save more than the subscription.' Which households? How many? Compared to what? You ship a waste report. You have the data. Show me the data.",
+    "The waste report is on the $6.99 plan only. So the feature that would prove your saving claim is behind the most expensive tier. That's an odd order of operations.",
+    "$3.99 with an asterisk, and the real monthly price is in a collapsed FAQ at $5.99. I did the math: it's fifty percent more. That's a pricing page designed to be misread.",
+    "Card up front for a 'free' trial, converting to annual. I'm not saying it's illegal. I'm saying that's how you pump trial-to-paid conversion in month one and then find out in month four that nobody opens the app.",
+    "On my phone the pricing table just cuts off. I see Starter, half of Household, and I'd have to know to swipe to find Family+. Fine for a demo, not fine for the page where you ask for money.",
+    "Privacy page says you may share aggregated shopping insights with retail partners. So which is it: subscription business, or receipts-for-retail-media business with a subscription as the data-collection mechanism? Those are different companies and different valuations.",
+    "Show me month-three retention on a cohort of paying households and show me a control group. That's the whole conversation. Everything else is a nice logo.",
+    "日本語で言えば、「節約できる」は測っていないなら広告です。"
+  ],
+  "unsaid": [
+    "I like the shared-household angle more than I will admit. Every food-waste app I passed on was single-user, and single-user fridge logging is dead on arrival because nobody keeps typing in groceries alone. A shared list with social pressure ('who finished the milk') has a different retention mechanism. That's the only thing on this site that is not a copy of the previous four.",
+    "I can't tell if the product exists. No web link, no real screenshot, 'coming soon' video. I did not say 'this is vapor' in the room because I can't prove it, but my behaviour says it: I opened privacy and pricing first, which is what you do when the product page gives you nothing.",
+    "The partner-offers line is the real business. A pantry list is a loyalty-card data set that doesn't need a loyalty card. If that is the plan, the subscription is a cover story and the retail partners are the customer. I would rather the founders said so. Founders who hide the revenue line from users will hide it from me.",
+    "The card-required trial told me the team is optimising for the conversion chart in the board deck. I have seen that chart. It looks great for ninety days.",
+    "I would screenshot the pricing table and the phone cut-off and send it to my associate with no comment. She will know what I mean, and I do not want a thread about it.",
+    "If I'm honest, the thing that would actually get me to a second call is not on this site and I'm not going to be able to say it to a stranger in a cold email: I want to be wrong about this category once. I have a thesis written down in a memo that food-waste apps don't work, and I'd rather be proven wrong with data than keep being right.",
+    "I did not sign up and I will not. Partly because of the card, partly because I do not want my email on a list that ends up with partner offers. The privacy page tells me I'd be the product."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "Nothing on the site is measured. The savings claim has no number, the report that would measure it is gated to the top tier, there is no retention data, no way to try the product and no real screenshot. The revenue model is ambiguous between subscription and retail-media data. A card-required trial that converts to an annual charge, with the cheap monthly price hidden, makes early conversion numbers unreliable as evidence.",
+    "what_would_flip": "Cohort data from paying households: month-3 and month-6 paid retention, weekly active rate per household member, and an item-level waste reduction against a matched control, plus a working product I can open without a card."
+  },
+  "deal": {
+    "entry": "NO",
+    "ticket": "6M USD in a 20M USD Series A round, if reopened (my usual range is 5-12M USD)",
+    "valuation": "Reopens at 28-38M USD pre-money, only after the proof below. With no retention data today, I would not put a number on it above seed pricing (about 8-12M USD pre).",
+    "instrument": "Series A preferred equity, 1x non-participating liquidation preference. No SAFE and no note at this stage.",
+    "conditions": [
+      "Paid-household month-6 retention of at least 55% on a cohort of 500 or more paying households, measured on monthly-billed users and on annual users separately, so the card-up-front trial does not flatter the number.",
+      "Weekly active households of at least 50% of paying households at month 3.",
+      "A measured waste reduction of at least 25% in items discarded per household versus a matched control or pre-use baseline, shown on item-level data and not self-reported.",
+      "Median measured saving of at least 1.5x the annual plan price ($72 or more per household per year), shown to me with the method.",
+      "Gross margin of at least 75% on subscription revenue after OCR and notification costs.",
+      "A clear statement of what share of revenue comes or is planned from partner offers and retail data, with signed or in-draft partner agreements."
+    ],
+    "red_lines": [
+      "Selling or sharing household-level receipt data with retailers or brands without explicit, separate, un-bundled opt-in.",
+      "Consent to partner offers folded into the terms of service.",
+      "Reporting trial-to-paid conversion for card-required trials as the headline growth metric.",
+      "Any savings claim shown to customers that the company has not measured."
+    ],
+    "offers": [
+      "Intro to the head of retail media at Harbor & Pike Grocers, a fictional Ridgeline portfolio-adjacent grocer, for a pilot on opt-in offers.",
+      "Intro to the data privacy counsel at Ridgeline's outside firm, Alder & Voss, to write the partner-data consent flow before launch.",
+      "Access to Ridgeline's consumer subscription benchmark set (about 40 portfolio and diligence companies) for month-3 and month-6 retention comparisons.",
+      "Two reference calls with founders of food-waste apps I passed on, who will tell them exactly where theirs churned."
+    ],
+    "wants": [
+      "A subscription business that earns its keep from households that stay, not a data collector with a subscription paywall.",
+      "Waste report on every paid plan, shown from the first week, with a real number.",
+      "A monthly price on the pricing page that is the monthly price.",
+      "A clear public method for the savings claim, or removal of the claim."
+    ],
+    "refuses": [
+      "A growth plan based on card-up-front trials converting into annual plans that users forget to cancel.",
+      "A pivot to retail media where the subscription becomes a loss leader for data sales.",
+      "Raising on a conversion metric from a cohort younger than six months.",
+      "Participating in a round where the savings claim is used in marketing without a measurement behind it."
+    ],
+    "board_terms": "One board seat out of five, standard information rights with monthly cohort retention and waste-measurement reporting to me, pro-rata rights, and a consent right over any change to the data-sharing policy.",
+    "conviction": 2
+  }
+}

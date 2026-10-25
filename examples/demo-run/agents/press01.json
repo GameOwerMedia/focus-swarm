@@ -1,0 +1,134 @@
+{
+  "id": "press01",
+  "group": "press",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "opened the home page and read it top to bottom, including the footer line and the beta quote",
+    "opened /pricing at desktop width, then at phone width (390 px); read the plan table, the footnote and all four FAQ items",
+    "opened /signup at desktop width and read every field and the line under the button; judged the phone layout from the page styles because no phone capture of that page was available",
+    "opened /privacy and read all five bullets",
+    "followed the 'See how it works' button to the video block, looked for any link into the web app, looked for any named person or company behind the beta quote",
+    "read the stylesheet to check text contrast, the pricing table's minimum width and what the phone breakpoint hides"
+  ],
+  "name": "Sana Mirza",
+  "age": 31,
+  "role": "Consumer technology reporter",
+  "org": "The Weekly Byte (fictional newsletter)",
+  "location": "London, UK",
+  "real_person": false,
+  "disposition": "skeptical",
+  "first_10s": "Pantry app. Shared fridge list. Cute. 'Partner offers... based on your pantry' - there it is, sixth tile, same size as 'Waste report' as if it's just another feature. Free trial button, fine, but I already know there's a card behind it because there always is. Scrolling straight to Privacy before I read another word about mustard.",
+  "journey": [
+    "Landed on the home page: friendly pitch, mock phone with 'Flat 3B pantry'. The footer says it is a fictional product, so I review it as written.",
+    "Tile 6, 'Partner offers: discounts from our retail partners on the things you actually buy, based on your pantry'. That is a retail media business sitting in the feature grid.",
+    "Pricing: Household $3.99/mo* and Family+ $6.99/mo*. The asterisk goes to a footnote in small grey type: billed annually, $47.88 and $83.88. Monthly prices ($5.99, $9.99) only appear in a collapsed FAQ item.",
+    "On a phone the pricing table is wider than the screen and scrolls sideways. Starter shows in full, then Household is cut off at the edge ('$3.99/m'), with the asterisk and the paid-plan details half out of view. The footnote sits below the table, so the first screen shows a monthly-looking price with no annual qualifier.",
+    "Opened the FAQ: 'Why do you need my card for the free trial?' The answer is 'It keeps the trial smooth for your whole household.' That is not an answer.",
+    "Sign-up: headline says 'Start your 14-day free trial', then 'You won't be charged today. Your Household plan ($47.88/year) starts after the trial unless you cancel.' So the first charge is a full year, not $3.99. Card number, expiry and CVC sit on step 1 with email and password.",
+    "Under the button, in small muted text: 'By continuing you agree to our Terms and Privacy notice, including partner offers.' One click covers terms, privacy and partner offers. 'Terms' is not a link; only 'Privacy notice' is.",
+    "On a phone the top nav collapses, so Features, Pricing and Privacy disappear. The sign-up page has no 'Get the app' button and no menu, so the only route from the form to the privacy page is that inline link. I found no route into the web app, which the home page says 'works today'.",
+    "Privacy page: 'we may share anonymised and aggregated shopping insights with retail and brand partners to power offers and market research.' No partner list, no definition of aggregated, no opt-out, no named data controller. Deletion is by email, up to 30 days.",
+    "Stopped at the card field. Would not type anything real."
+  ],
+  "usability": {
+    "score": 42,
+    "completed_main_task": false,
+    "blockers": [
+      "No route into the product itself: the home page says the web app works today but no link opens it, so I cannot test what I would be writing about.",
+      "The site never says who the 'retail and brand partners' are or what 'aggregated' means, so the one question I came for stays unanswered.",
+      "No way to start even the free tier without the card-first form: every button, including 'Start free', goes to the same page that asks for card details."
+    ],
+    "friction": [
+      "Phone pricing table is 760 px wide inside a 390 px viewport, so the paid plans are cut off and the annual-billing asterisk is easy to miss.",
+      "Monthly prices are hidden in a collapsed FAQ; the headline prices are the annual price divided by twelve.",
+      "Annual-billing footnote, the sub-copy and the consent line are in pale grey (#9aa59f) on white, roughly 2.5:1, small type, hard to read on an iPhone outdoors.",
+      "Phone nav hides Pricing and Privacy; on the sign-up page there is no navigation back to pricing or privacy apart from one in-text link.",
+      "Sign-up lists '3. Invite your household' as a step, but I cannot see what is asked there or what it shares before I enter a card.",
+      "'Terms' in the consent line does not link anywhere."
+    ]
+  },
+  "works": [
+    "The privacy page is short, written in plain words, and says receipts are kept 30 days and that household members see who added what.",
+    "The sign-up form states the annual amount ($47.88/year) and 'You won't be charged today' on the same page as the card field.",
+    "Trial terms, annual conversion and 'cancel before day 14' are disclosed on the pricing page, not entirely buried.",
+    "No countdown timers, fake scarcity or pre-ticked boxes; there are no tickboxes at all."
+  ],
+  "fails": [
+    "The advertised price is a monthly figure for a plan sold as a yearly charge; the actual monthly price is 50 percent higher and sits in a closed accordion.",
+    "'Free trial' requires a full card and converts to a full-year charge automatically; the reason given for needing the card is marketing copy, not a reason.",
+    "Consent to partner offers is bundled with Terms and Privacy under the button, not asked separately.",
+    "The sharing clause is the vaguest sentence on the site and sits next to a tile that sells shopping-based discounts, so the data is plainly a second revenue line.",
+    "The testimonial is from 'a beta household of four' with no name, and the claim 'most households save more than the subscription' has no number or source.",
+    "The video block says 'coming soon'; there are no real product screenshots, just a mock-up."
+  ],
+  "missing": [
+    "A list of retail and brand partners, or at least categories, and what fields they get (item level, store level, household size, postcode).",
+    "A definition of 'anonymised and aggregated' and a minimum group size.",
+    "A separate opt-in for partner offers that is independent of agreeing to the terms.",
+    "A data controller name, registered address and a data-protection contact; retention period for pantry and receipt data after the 30-day image window.",
+    "A way to delete an account in the app rather than by email.",
+    "A real product demo, a link to the web app and any evidence for the savings claim.",
+    "A Terms page."
+  ],
+  "said": [
+    "'Free trial' with a card up front and a full year's charge at the end isn't a free trial. It's an annual subscription with a two-week cancellation window.",
+    "Three ninety-nine a month, actually billed as forty-eight dollars a year, and the real monthly price is in a dropdown at the bottom. That's the first thing I'd screenshot.",
+    "I opened pricing on my phone and the Household plan just falls off the edge of the screen. The price that sells it is the one you can't read.",
+    "'It keeps the trial smooth for your whole household.' Right. Why do you need my card? Because that's where the conversion happens.",
+    "One line under the button: terms, privacy and partner offers all agreed with a single click. That's the bit I'd put in the piece.",
+    "'Anonymised and aggregated shopping insights with retail and brand partners.' Which partners? Aggregated across how many households? I wrote about a budgeting app that said much the same sentence."
+  ],
+  "unsaid": [
+    "The product itself is not the story. A shared fridge list is a nice idea I'd forget in a weekend. What I care about is whether this is a grocery-data company with a fridge app on the front.",
+    "If this were real I still would not write it up yet: one anonymous quote, a placeholder video and no app makes a landing page, not a launch. It goes into a 'check back in six months' folder and I don't reply to the founder email.",
+    "The household angle bothers me more than the card. Flatmates' names and emails go in because one person signed up, and the privacy page never says they are told or asked. I would not say that publicly until I had checked it, because it is easy to overstate.",
+    "I would be annoyed at myself for liking the Dijon mustard joke. The copy is good, and good copy is why people sign up without reading page three.",
+    "If I did press 'Start free trial' I'd use a virtual card and set a calendar reminder for day 11 before doing anything else. That tells you what I think of the trial.",
+    "I have already saved the pricing footnote and the line under the sign-up button to my notes with nothing written next to them. That's the pile I look at when a story is thin and I'm deciding whether it's worth a phone call."
+  ],
+  "verdict": {
+    "decision": "maybe",
+    "why": "Not on what is here. It's a thin pre-launch site with a familiar pair of dark patterns (annual billing shown as monthly, card-required trial) that fits a roundup, and a data-sharing clause I can't judge without partner names and field-level detail. That clause is the only part that could become its own story.",
+    "what_would_flip": "A named partner or a data sheet showing item-level or household-level data going to retailers, or a working web app where I can see what the partner-offers setting actually sends. With either, this is a data story. Without them it's a paragraph in a column."
+  },
+  "extra": [
+    {
+      "key": "angle",
+      "label": "My angle",
+      "type": "text",
+      "value": "A fridge app whose second business is shopping data. The pantry is the way in; the story is what retail and brand partners receive, and whether the people in the household who didn't sign up have a say."
+    },
+    {
+      "key": "headline",
+      "label": "The headline I would write",
+      "type": "text",
+      "value": "'Free for 14 days' costs $47.88: the pantry app with a card-first trial and a data-sharing clause that names no partners"
+    },
+    {
+      "key": "would_cover",
+      "label": "Would cover it",
+      "type": "bool",
+      "value": false
+    },
+    {
+      "key": "missing_for_story",
+      "label": "What is missing for a story",
+      "type": "list",
+      "value": [
+        "Names, or at least types, of the retail and brand partners",
+        "What the partner-offers data actually contains (item-level, household-level, location) and how it is aggregated",
+        "A working web app to test what the opt-in does",
+        "Whether household members other than the account holder are told or asked",
+        "Real users, with names, who hit a billing problem or a surprise charge",
+        "Who owns Larder Labs and where its revenue comes from"
+      ]
+    },
+    {
+      "key": "the_hostile_version",
+      "label": "The hostile version of this piece",
+      "type": "text",
+      "value": "Larder says your fridge is free for two weeks. It wants your card on the first screen, bills you a full year on day 15, and shows the price per month in large type with an asterisk. Its privacy page lets it hand 'insights' about what you eat to brands it won't name, on the strength of a sentence under a button. And your flatmates' names and emails go in with you."
+    }
+  ]
+}

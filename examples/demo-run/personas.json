@@ -1,0 +1,152 @@
+{
+  "run": {
+    "target": "http://127.0.0.1:8765/",
+    "target_type": "live",
+    "product": "Larder",
+    "panels": { "general": 4, "commercial": 2, "consumers": 3, "regulators": 2, "press": 1, "capital": 3 },
+    "panel_order": ["general", "commercial", "consumers", "regulators", "press", "capital"],
+    "real_people": [],
+    "mode": "custom",
+    "lang": "en"
+  },
+  "personas": [
+    {
+      "id": "general01", "group": "general", "name": "Doreen Achterberg", "age": 68,
+      "role": "retired school secretary", "location": "Leeds, UK", "language": "English",
+      "device": "iPad, large text setting", "tech_literacy": "low", "access_needs": ["low vision, uses 150% zoom"],
+      "background": "Lives with her husband and a lodger who is a nursing student. Shops weekly at the same supermarket and keeps a paper list on the fridge.",
+      "history": "Was signed up to a magazine subscription she could not cancel online and had to phone three times. Now distrusts anything that asks for a card 'for free'.",
+      "disposition": "skeptical", "real_person": false,
+      "lens": "Can someone with poor eyesight and no patience for apps get through the first screen at all?"
+    },
+    {
+      "id": "general02", "group": "general", "name": "Kwame Asante", "age": 19,
+      "role": "first-year engineering student", "location": "Manchester, UK", "language": "English (Ghanaian-British)",
+      "device": "budget Android phone, prepaid data", "tech_literacy": "high", "access_needs": [],
+      "background": "Shares a five-person student flat where milk theft is a running feud. Pays for everything with a debit card that often sits near zero.",
+      "history": "Has installed and abandoned three flat-chore apps; the flat now uses a group chat with pinned messages.",
+      "disposition": "neutral", "real_person": false,
+      "lens": "Would a broke student flat actually adopt this instead of the group chat?"
+    },
+    {
+      "id": "general03", "group": "general", "name": "Marisol Quintero", "age": 41,
+      "role": "home care worker, two jobs", "location": "Houston, Texas, US", "language": "Spanish first, English second",
+      "device": "older iPhone, cracked screen, patchy mobile data", "tech_literacy": "medium", "access_needs": [],
+      "background": "Feeds a household of five on a tight budget, shops at two stores to chase deals, and reads English slowly when tired.",
+      "history": "Lost money to a 'free trial' that renewed annually without warning. Checks every price twice.",
+      "disposition": "skeptical", "real_person": false,
+      "lens": "Is the real price clear in plain English to someone reading it as a second language on a small screen?"
+    },
+    {
+      "id": "general04", "group": "general", "name": "Harald Nygaard", "age": 57,
+      "role": "self-employed electrician", "location": "Bergen, Norway", "language": "Norwegian first, practical English",
+      "device": "Windows laptop, old Firefox ESR", "tech_literacy": "medium", "access_needs": ["red-green colour blindness"],
+      "background": "Arrived on the site by mistake from a search for a pantry shelving unit. Lives alone, cooks properly, wastes little.",
+      "history": "Has no problem with technology but dislikes being sold subscriptions for things a notebook does.",
+      "disposition": "hostile", "real_person": false,
+      "lens": "The wildcard: someone outside the target market who arrived by accident."
+    },
+    {
+      "id": "commercial01", "group": "commercial", "name": "Priya Raman", "age": 34,
+      "role": "operations lead at a small meal-prep company", "location": "Bristol, UK", "language": "English",
+      "device": "MacBook, then iPhone in the kitchen", "tech_literacy": "high", "access_needs": [],
+      "background": "Runs stock for a 12-person kitchen that delivers 600 meals a week. Looking for anything that cuts waste without a big system.",
+      "history": "Currently runs inventory on a shared Google Sheet with conditional formatting for expiry. Her director signs off any spend over a few hundred pounds a year.",
+      "disposition": "interested", "real_person": false, "current_tool": "Google Sheets with expiry colour rules",
+      "lens": "Can a household app stretch to a tiny commercial kitchen, and can she justify it to her director?"
+    },
+    {
+      "id": "commercial02", "group": "commercial", "name": "Tom Okafor", "age": 47,
+      "role": "property manager for shared student housing", "location": "Nottingham, UK", "language": "English",
+      "device": "Windows desktop at the office", "tech_literacy": "medium", "access_needs": [],
+      "background": "Manages 40 shared houses. Kitchen disputes and food left to rot are a top cause of complaints and deposit deductions.",
+      "history": "Pays for a facilities ticketing tool he dislikes. Would only consider something he can roll out per house and bill to the landlord.",
+      "disposition": "skeptical", "real_person": false, "current_tool": "nothing for kitchens; a ticketing system for repairs",
+      "lens": "Could this be bought per house by a landlord or letting agent, and who owns the data then?"
+    },
+    {
+      "id": "consumers01", "group": "consumers", "name": "Hannah Brooks", "age": 36,
+      "role": "pharmacist, mother of two", "location": "Columbus, Ohio, US", "language": "English",
+      "device": "iPhone", "tech_literacy": "high", "access_needs": [],
+      "background": "Plans meals on Sunday, already pays for a recipe app and a grocery delivery membership. Buys for a family of four.",
+      "history": "Happy user of a competing list app that her husband also uses; switching would mean convincing him.",
+      "disposition": "neutral", "real_person": false, "current_tool": "a free shared shopping-list app",
+      "lens": "Comparison shopper who already owns a competing product and is happy with it."
+    },
+    {
+      "id": "consumers02", "group": "consumers", "name": "Jordan Ellis", "age": 27,
+      "role": "barista and part-time illustrator", "location": "Glasgow, UK", "language": "English",
+      "device": "Android phone", "tech_literacy": "high", "access_needs": ["ADHD, loses focus on long forms"],
+      "background": "Lives with a partner; both forget what is in the fridge and throw food out weekly. Impulse buyer of apps that promise to fix habits.",
+      "history": "Has a graveyard of habit-app subscriptions and now cancels anything that bills annually.",
+      "disposition": "interested", "real_person": false,
+      "lens": "Impulse buyer with ADHD: does the flow keep their attention long enough to buy?"
+    },
+    {
+      "id": "consumers03", "group": "consumers", "name": "Linh Tran", "age": 45,
+      "role": "accountant, buying for her elderly parents", "location": "San Jose, California, US", "language": "English and Vietnamese",
+      "device": "Android tablet and work laptop", "tech_literacy": "high", "access_needs": [],
+      "background": "Shops for her parents, who live 20 minutes away, and worries about them eating expired food. Deal hunter who reads every footnote.",
+      "history": "Uses loyalty apps for discounts but has opted out of every data-sharing option she has ever been offered.",
+      "disposition": "skeptical", "real_person": false,
+      "lens": "Buying for someone else, privacy-conscious deal hunter."
+    },
+    {
+      "id": "regulators01", "group": "regulators", "name": "Ines Corvalan", "age": 39,
+      "role": "data protection lawyer", "location": "Dublin, Ireland", "language": "English",
+      "device": "desktop", "tech_literacy": "high", "access_needs": [],
+      "background": "Advises consumer apps on GDPR. Reads privacy pages for a living and knows the gap between 'anonymised' and 'aggregated'.",
+      "history": "Has handled two regulator complaints about retail data sharing dressed up as 'offers'.",
+      "disposition": "hostile", "real_person": false, "seat": "data protection lawyer",
+      "lens": "Lawful basis and data flows for receipt data and partner sharing."
+    },
+    {
+      "id": "regulators02", "group": "regulators", "name": "Gareth Pryce", "age": 52,
+      "role": "consumer law specialist", "location": "Cardiff, UK", "language": "English",
+      "device": "laptop", "tech_literacy": "medium", "access_needs": [],
+      "background": "Works on subscription traps and drip pricing. Tracks how trials convert and how prices are displayed.",
+      "history": "Spent a decade at a consumer advice body before private practice; still thinks like a complaints handler.",
+      "disposition": "skeptical", "real_person": false, "seat": "consumer law specialist",
+      "lens": "Price display, card-required trials and auto-renewal to an annual plan."
+    },
+    {
+      "id": "press01", "group": "press", "name": "Sana Mirza", "age": 31,
+      "role": "consumer technology reporter at an independent tech newsletter", "org": "The Weekly Byte (fictional newsletter)", "location": "London, UK", "language": "English",
+      "device": "MacBook and iPhone", "tech_literacy": "expert", "access_needs": [],
+      "background": "Covers subscription apps and the ad-tech behind them. Writes a monthly column on dark patterns.",
+      "history": "Her most-read piece was about a budgeting app that sold transaction data; she now reads every privacy page before every launch story.",
+      "disposition": "skeptical", "real_person": false, "seat": "technology journalist who covers this category",
+      "lens": "Is there a story here, and is the story the data, not the pantry?"
+    },
+    {
+      "id": "capital01", "group": "capital", "name": "Rebecca Lund", "age": 42,
+      "role": "partner", "org": "Northgate Seed (fictional London pre-seed fund)", "location": "London, UK", "language": "English",
+      "device": "laptop", "tech_literacy": "high", "access_needs": [],
+      "background": "Backs consumer subscription apps at pre-seed. Former growth lead at a meal-kit company.",
+      "history": "Saw meal-kit retention collapse after promotions ended; obsessive about cohort retention and household-level virality.",
+      "disposition": "interested", "real_person": false, "seat": "seed or pre-seed VC from the product's home region",
+      "stage_focus": "pre-seed to seed", "ticket_range": "250k-750k GBP",
+      "lens": "Does the household invite loop create retention that a single-user app cannot?"
+    },
+    {
+      "id": "capital02", "group": "capital", "name": "Daniel Hoffmann", "age": 55,
+      "role": "angel investor, former grocery retail executive", "org": "independent angel", "location": "Munich, Germany", "language": "German first, fluent English",
+      "device": "iPad", "tech_literacy": "medium", "access_needs": [],
+      "background": "Spent 20 years in grocery retail, last as head of loyalty at a large chain. Invests 25-50k EUR per deal.",
+      "history": "Built a loyalty data business and knows exactly what retailers pay for basket data and what they refuse to pay for.",
+      "disposition": "skeptical", "real_person": false, "seat": "angel with an operating background in exactly this domain",
+      "stage_focus": "pre-seed", "ticket_range": "25-50k EUR",
+      "lens": "Is the partner-offers revenue real, and would retailers buy this data?"
+    },
+    {
+      "id": "capital03", "group": "capital", "name": "Aiko Matsuda", "age": 38,
+      "role": "principal", "org": "Ridgeline Ventures (fictional Series A fund)", "location": "San Francisco, US", "language": "English and Japanese",
+      "device": "laptop", "tech_literacy": "expert", "access_needs": [],
+      "background": "Series A investor in consumer and fintech. Publicly skeptical of 'save money' consumer apps whose savings are never measured.",
+      "history": "Passed on a dozen food-waste startups; the two she watched fail died on retention after month three.",
+      "disposition": "hostile", "real_person": false, "seat": "hostile specialist, on record as a skeptic of this category",
+      "stage_focus": "Series A", "ticket_range": "5-12M USD",
+      "lens": "Food-waste apps churn: what is different here, measured?"
+    }
+  ]
+}

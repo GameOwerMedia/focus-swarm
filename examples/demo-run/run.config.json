@@ -1,0 +1,27 @@
+{
+  "target": "http://127.0.0.1:8765/",
+  "target_type": "live",
+  "product": "Larder",
+  "date": "2026-10-25",
+  "lang": "en",
+  "panels": {
+    "general": 4,
+    "commercial": 2,
+    "consumers": 3,
+    "regulators": 2,
+    "press": 1,
+    "capital": 3
+  },
+  "panel_order": [
+    "general",
+    "commercial",
+    "consumers",
+    "regulators",
+    "press",
+    "capital"
+  ],
+  "real_people": [],
+  "notes": "Pricing and the card-required trial are new. Check the sign-up path on a phone.",
+  "mode": "custom",
+  "picked_at": "2026-10-25T12:05:00.000Z"
+}

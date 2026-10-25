@@ -1,0 +1,122 @@
+[
+  {
+    "id": "general01",
+    "group": "general",
+    "name": "Doreen Achterberg",
+    "prompt": "prompts/general01.md",
+    "report": "agents/general01.json",
+    "wave": 1
+  },
+  {
+    "id": "general02",
+    "group": "general",
+    "name": "Kwame Asante",
+    "prompt": "prompts/general02.md",
+    "report": "agents/general02.json",
+    "wave": 1
+  },
+  {
+    "id": "general03",
+    "group": "general",
+    "name": "Marisol Quintero",
+    "prompt": "prompts/general03.md",
+    "report": "agents/general03.json",
+    "wave": 1
+  },
+  {
+    "id": "general04",
+    "group": "general",
+    "name": "Harald Nygaard",
+    "prompt": "prompts/general04.md",
+    "report": "agents/general04.json",
+    "wave": 1
+  },
+  {
+    "id": "commercial01",
+    "group": "commercial",
+    "name": "Priya Raman",
+    "prompt": "prompts/commercial01.md",
+    "report": "agents/commercial01.json",
+    "wave": 1
+  },
+  {
+    "id": "commercial02",
+    "group": "commercial",
+    "name": "Tom Okafor",
+    "prompt": "prompts/commercial02.md",
+    "report": "agents/commercial02.json",
+    "wave": 1
+  },
+  {
+    "id": "consumers01",
+    "group": "consumers",
+    "name": "Hannah Brooks",
+    "prompt": "prompts/consumers01.md",
+    "report": "agents/consumers01.json",
+    "wave": 1
+  },
+  {
+    "id": "consumers02",
+    "group": "consumers",
+    "name": "Jordan Ellis",
+    "prompt": "prompts/consumers02.md",
+    "report": "agents/consumers02.json",
+    "wave": 1
+  },
+  {
+    "id": "consumers03",
+    "group": "consumers",
+    "name": "Linh Tran",
+    "prompt": "prompts/consumers03.md",
+    "report": "agents/consumers03.json",
+    "wave": 2
+  },
+  {
+    "id": "regulators01",
+    "group": "regulators",
+    "name": "Ines Corvalan",
+    "prompt": "prompts/regulators01.md",
+    "report": "agents/regulators01.json",
+    "wave": 2
+  },
+  {
+    "id": "regulators02",
+    "group": "regulators",
+    "name": "Gareth Pryce",
+    "prompt": "prompts/regulators02.md",
+    "report": "agents/regulators02.json",
+    "wave": 2
+  },
+  {
+    "id": "press01",
+    "group": "press",
+    "name": "Sana Mirza",
+    "prompt": "prompts/press01.md",
+    "report": "agents/press01.json",
+    "wave": 2
+  },
+  {
+    "id": "capital01",
+    "group": "capital",
+    "name": "Rebecca Lund",
+    "prompt": "prompts/capital01.md",
+    "report": "agents/capital01.json",
+    "wave": 2
+  },
+  {
+    "id": "capital02",
+    "group": "capital",
+    "name": "Daniel Hoffmann",
+    "prompt": "prompts/capital02.md",
+    "report": "agents/capital02.json",
+    "wave": 2
+  },
+  {
+    "id": "capital03",
+    "group": "capital",
+    "name": "Aiko Matsuda",
+    "prompt": "prompts/capital03.md",
+    "report": "agents/capital03.json",
+    "wave": 2
+  }
+]

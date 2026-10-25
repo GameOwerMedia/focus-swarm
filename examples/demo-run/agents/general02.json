@@ -1,0 +1,105 @@
+{
+  "id": "general02",
+  "group": "general",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the landing page and read it top to bottom, then looked at it at phone width (390 px)",
+    "Opened /pricing at phone width and read the plan table, the small print and all four FAQ questions",
+    "Opened the sign-up page and read every field, the step line and the consent sentence under the button; checked the form styling for phone width",
+    "Opened the privacy page and read it for what happens to receipt and shopping data",
+    "Read the stylesheet to check what the navigation does on a narrow screen and how wide the pricing table is",
+    "Tried the main task as this person: work out what a five-person student flat would pay, whether it works on an Android phone, and what happens to a near-empty debit card. Stopped at the card number field and did not type anything",
+    "No phone image of the sign-up or privacy page was available, so the phone check of sign-up is from the markup and styles, not from seeing it rendered"
+  ],
+  "name": "Kwame Asante",
+  "age": 19,
+  "role": "First-year engineering student",
+  "location": "Manchester, UK",
+  "real_person": false,
+  "background": "Shares a five-person student flat where milk theft is a running feud. Pays for everything with a debit card that often sits near zero.",
+  "history": "Has installed and abandoned three flat-chore apps; the flat now uses a group chat with pinned messages.",
+  "disposition": "neutral",
+  "first_10s": "Okay, 'know what's in the fridge before you shop'. Fine. Mustard x3 joke, ha, that's literally our flat but with milk. 'Free trial' button, good. 'Available on iOS soon, Android later this year'... bro I'm on Android. 'Web app works today' but where is the web app? Only button is Get the app and Start free trial. Let me look at the price before anything else.",
+  "journey": [
+    "Landed on the home page on my phone. The hero reads fine and the fake flat pantry made me smile because it is basically our fridge. The small line under the button says iOS soon, Android later this year, so I am on the wrong platform straight away.",
+    "Looked for a way to see the web app that supposedly works today. There is no link to it anywhere. The only buttons are Get the app and Start your free trial, and both go to a sign-up form.",
+    "On a phone the top bar drops Pricing and Privacy and leaves one big green Get the app button. I only found Pricing because I scrolled to the footer.",
+    "Opened pricing. Starter is free but for 1 member and 50 items, so it is no use for a flat of five. Household is 'Up to 5 members', which is exactly us.",
+    "The table is wider than my screen. I only saw Starter fully. Household was cut off at 'Household $3.99/m' and the words 'Barcode and rec' ended mid-word. Nothing tells me to swipe sideways, so I swiped by accident and found Family+.",
+    "$3.99 a month sounded cheap, but there is a star. Down in tiny grey text it is billed annually, $47.88 a year, and the trial converts to a paid annual plan unless I cancel before day 14.",
+    "Opened the FAQ. Monthly is $5.99 for Household, so the price in big letters is not a price you can actually pay month to month.",
+    "Opened 'Why do you need my card for the free trial?'. The answer is 'it keeps the trial smooth for your whole household'. That is not a reason.",
+    "Went to sign up. The form asks email, a password of at least 12 characters, card number, expiry and CVC, all in one go. It says I will not be charged today, and Household at $47.88 a year is already chosen for me.",
+    "The step line says 1 Account, 2 Payment, 3 Invite your household, but it is one long form. I could not see how to invite the flat before putting in a card.",
+    "Under the button it says by continuing I agree to Terms and the Privacy notice 'including partner offers'. Read the privacy page: they share anonymised shopping insights with retail partners, and keep receipt images for 30 days.",
+    "Stopped at the card number field. I would not type my debit card in here."
+  ],
+  "usability": {
+    "score": 38,
+    "completed_main_task": false,
+    "blockers": [
+      "Android is listed as 'later this year' and there is no link to the web app that is said to work today, so on my phone I cannot actually start using it",
+      "The trial needs a card number up front, and my debit card is often near zero. I do not know what happens if a charge of $47.88 hits it on day 15, or whether a check on the card would fail",
+      "The free plan is 1 member, so a student flat has no way to try it with the whole flat without handing over a card"
+    ],
+    "friction": [
+      "Pricing table is 760 px wide inside a 390 px screen with no hint to scroll sideways. The plan I need (Household) is half cut off and the price suffix is cut to '/m'",
+      "Pricing and Privacy vanish from the top bar on a phone, leaving only Get the app",
+      "The headline $3.99 a month is billed as a yearly $47.88. The real monthly price ($5.99) is hidden in a closed FAQ answer",
+      "The 'trial turns into an annual plan' line is 12px grey small print at the bottom of the table, far from the buttons",
+      "Prices are in dollars for a UK student. 'Prices exclude local taxes' makes it worse because I cannot tell the final pounds amount",
+      "Sign-up has three steps in the header but it is one form, and there is no step where I pick the plan or invite flatmates",
+      "A password of at least 12 characters is a lot to type on a phone keyboard just for a trial",
+      "'Product tour video coming soon' is a dead play button on the landing page",
+      "The only testimonial is anonymous: 'a beta household of four'"
+    ]
+  },
+  "works": [
+    "The hero mock-up (oat milk 2 days, mustard x3 'stop!') shows the idea in two seconds and made me smile",
+    "The flat-sharing idea is clear. 'See who added what, and who finished the milk' is exactly our feud",
+    "Household at up to 5 members matches a five-person flat",
+    "The page loads fast and the text is readable on a phone. The sign-up form is a single narrow column with big fields",
+    "The FAQ does say there is a monthly option and promises an email three days before the trial ends"
+  ],
+  "fails": [
+    "Does not work on my phone: Android is 'later this year'",
+    "Asks for a card for a 'free' trial and gives a non-reason for it",
+    "Headline price is the annual price spread across months",
+    "Pricing table is cut off on a phone with no scroll cue",
+    "Consent to partner offers is tied to clicking the sign-up button",
+    "Nothing explains how to cancel, only that I can before day 14"
+  ],
+  "missing": [
+    "A way to try it without a card, for example a web link or the free plan with a flatmate or two",
+    "Android availability date or a working web app link",
+    "A split price: what Household costs per person in a five-person flat",
+    "Prices in pounds",
+    "How to cancel and how to be sure I will not be charged, in plain words next to the button",
+    "What happens on day 15 if the card has no money",
+    "Why this is better than a group chat with pinned messages, which costs nothing",
+    "A real person's review, not anonymous"
+  ],
+  "said": [
+    "Android later this year? Cool, so it's not for me. Why's the big button saying 'Start free trial' then.",
+    "$3.99 a month, then I scroll and it's $47.88 a year. That is just the price of a month of data, in one hit. No.",
+    "Why do you need my card for a free trial? 'To keep it smooth.' Smooth for who.",
+    "Five of us splitting $47.88 is about $9.50 each a year, fair enough, but I'd have to be the one putting my card in and chasing four people for it.",
+    "The pricing table is cut off on my phone. I only saw Starter properly and that's for one person. Pointless for a flat.",
+    "We have a group chat with pinned messages. It's free and everybody's already in it.",
+    "I'd try it if I could just open it and add the milk. I won't give a card to see if the flat will use it."
+  ],
+  "unsaid": [
+    "My card regularly sits at about zero. Typing it in for something I might forget about feels like a risk, and a $47.88 hit on day 15 would put me in my overdraft. I would never say that in the flat chat. I would just say it looks like a scam.",
+    "I would be the one in the flat who has to push it. If I put my card in, I am the one who pays when the other four ignore the app after a week, like the last three chore apps. I do not want to be the flatmate who got a subscription.",
+    "I noticed the partner offers and the receipt scanning. A receipt is my whole shopping life, with prices, and the flat can see who bought what. Mates finding out I only buy the cheap stuff is a bigger deal than the company having the data.",
+    "The 'who finished the milk' feature sounds like it will start fights, not stop them. Better to leave the milk question vague.",
+    "I closed the pricing tab without clicking any of the buttons. The page would not have shown up in what I told my flatmates. If this had been sent to me by someone, I would have said 'looks good' and then never opened it again.",
+    "The way they hid the monthly price in the FAQ and put the trial-to-annual line in grey small print makes me think they expect people to forget to cancel. A company that does that is not getting my card."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "It does not run on my Android phone yet, it wants a card up front when mine is nearly always empty, and the free plan is one person so I cannot test it with the flat. The group chat is free and already works well enough.",
+    "what_would_flip": "A web link I can open on my phone today with no card, a free tier that lets the whole flat in for a few items, a price in pounds, and the monthly price and cancel steps next to the buy button instead of in small print."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "general01", "group": "general", "visited": true, "visit_method": "browser",
+  "evidence": ["opened /", "zoomed to 200%", "opened /pricing"],
+  "name": "Ada Example", "disposition": "skeptical",
+  "first_10s": "Big headline, tiny grey text. Where is the price?",
+  "journey": ["landed on the home page", "zoomed in", "found pricing in the footer"],
+  "usability": { "score": 35, "completed_main_task": false, "blockers": ["price only in a footnote"], "friction": ["low contrast"] },
+  "works": ["clear headline"], "fails": ["grey text unreadable"], "missing": ["phone number"],
+  "said": ["I couldn't read half of it."], "unsaid": ["I closed the tab and felt old."],
+  "verdict": { "decision": "no", "why": "Could not find the real price.", "what_would_flip": "Price on the first screen." }
+}

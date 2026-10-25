@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start your trial · Larder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><i></i>Larder</a>
+    <nav class="main">
+      <a href="index.html#features">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <form class="signup" action="#" onsubmit="document.getElementById('done').hidden=false;return false;">
+    <div class="steps"><b>1. Account</b> &rsaquo; <b>2. Payment</b> &rsaquo; 3. Invite your household</div>
+    <h1>Start your 14-day free trial</h1>
+    <p>You won't be charged today. Your Household plan ($47.88/year) starts after the trial unless you cancel.</p>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+    <label for="pw">Password</label>
+    <input id="pw" type="password" autocomplete="new-password" placeholder="At least 12 characters" required>
+
+    <label for="card">Card number</label>
+    <input id="card" inputmode="numeric" placeholder="1234 1234 1234 1234" required>
+    <div class="row">
+      <div><label for="exp">Expiry</label><input id="exp" placeholder="MM / YY" required></div>
+      <div><label for="cvc">CVC</label><input id="cvc" placeholder="123" required></div>
+    </div>
+
+    <button class="btn" type="submit">Start free trial</button>
+    <p id="done" hidden style="margin-top:16px;color:#22603f">This is a demo site: no account was created and nothing was charged.</p>
+    <p style="margin-top:16px">By continuing you agree to our Terms and <a href="privacy.html">Privacy notice</a>, including partner offers.</p>
+  </form>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Larder Labs Ltd. A fictional product for demonstrations.</span>
+    <span>hello@example.com</span>
+  </div>
+</footer>
+</body>
+</html>

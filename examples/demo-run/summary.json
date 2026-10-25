@@ -1,0 +1,209 @@
+{
+  "expected": 15,
+  "filed": 15,
+  "retry": [],
+  "invalid": {},
+  "unexpected_reports": [],
+  "panels": {
+    "general": {
+      "n": 4,
+      "yes": 0,
+      "maybe": 0,
+      "no": 4,
+      "completed": 0,
+      "usability_avg": 28
+    },
+    "commercial": {
+      "n": 2,
+      "yes": 0,
+      "maybe": 0,
+      "no": 2,
+      "completed": 0,
+      "usability_avg": 28
+    },
+    "consumers": {
+      "n": 3,
+      "yes": 0,
+      "maybe": 2,
+      "no": 1,
+      "completed": 0,
+      "usability_avg": 52
+    },
+    "regulators": {
+      "n": 2,
+      "yes": 0,
+      "maybe": 0,
+      "no": 2,
+      "completed": 0,
+      "usability_avg": 45
+    },
+    "press": {
+      "n": 1,
+      "yes": 0,
+      "maybe": 1,
+      "no": 0,
+      "completed": 0,
+      "usability_avg": 42
+    },
+    "capital": {
+      "n": 3,
+      "yes": 0,
+      "maybe": 2,
+      "no": 1,
+      "completed": 0,
+      "usability_avg": 44
+    }
+  },
+  "agents": [
+    {
+      "id": "general01",
+      "group": "general",
+      "name": "Doreen Achterberg",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 22,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "general02",
+      "group": "general",
+      "name": "Kwame Asante",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 38,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "general03",
+      "group": "general",
+      "name": "Marisol Quintero",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 38,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "general04",
+      "group": "general",
+      "name": "Harald Nygaard",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 15,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "commercial01",
+      "group": "commercial",
+      "name": "Priya Raman",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 35,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "commercial02",
+      "group": "commercial",
+      "name": "Tom Okafor",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 20,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "consumers01",
+      "group": "consumers",
+      "name": "Hannah Brooks",
+      "status": "ok",
+      "verdict": "maybe",
+      "usability": 55,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "consumers02",
+      "group": "consumers",
+      "name": "Jordan Ellis",
+      "status": "ok",
+      "verdict": "maybe",
+      "usability": 45,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "consumers03",
+      "group": "consumers",
+      "name": "Linh Tran",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 55,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "regulators01",
+      "group": "regulators",
+      "name": "Ines Corvalan",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 35,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "regulators02",
+      "group": "regulators",
+      "name": "Gareth Pryce",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 55,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "press01",
+      "group": "press",
+      "name": "Sana Mirza",
+      "status": "ok",
+      "verdict": "maybe",
+      "usability": 42,
+      "completed": false,
+      "entry": null
+    },
+    {
+      "id": "capital01",
+      "group": "capital",
+      "name": "Rebecca Lund",
+      "status": "ok",
+      "verdict": "maybe",
+      "usability": 38,
+      "completed": false,
+      "entry": "CONDITIONAL"
+    },
+    {
+      "id": "capital02",
+      "group": "capital",
+      "name": "Daniel Hoffmann",
+      "status": "ok",
+      "verdict": "maybe",
+      "usability": 40,
+      "completed": false,
+      "entry": "CONDITIONAL"
+    },
+    {
+      "id": "capital03",
+      "group": "capital",
+      "name": "Aiko Matsuda",
+      "status": "ok",
+      "verdict": "no",
+      "usability": 55,
+      "completed": false,
+      "entry": "NO"
+    }
+  ]
+}

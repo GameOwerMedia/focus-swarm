@@ -1,0 +1,134 @@
+{
+  "id": "consumers02",
+  "group": "consumers",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the landing page and read it top to bottom as a phone visitor",
+    "Opened /pricing at phone width and read the plan table, the small print and all four FAQ answers",
+    "Opened the sign-up page and read every field, the step line and the text around the button",
+    "Opened the privacy page and read the partner offers line",
+    "Read the stylesheet to check text colour, hidden navigation at phone width and how the pricing table scrolls",
+    "Looked at the rendered phone-width landing and pricing pages. The sign-up page had no phone screenshot, so I judged that one from its markup and CSS.",
+    "Forms do not submit; I stopped at the card number field and did not enter anything"
+  ],
+  "name": "Jordan Ellis",
+  "age": 27,
+  "role": "Barista and part-time illustrator",
+  "location": "Glasgow, UK",
+  "real_person": false,
+  "background": "Lives with a partner; both forget what is in the fridge and throw food out weekly. Impulse buyer of apps that promise to fix habits.",
+  "history": "Has a graveyard of habit-app subscriptions and now cancels anything that bills annually.",
+  "disposition": "interested",
+  "first_10s": "ok 'know what's in the fridge before you shop', that is literally me and my partner binning spinach every week. Mustard x3 on the fake phone made me laugh, we have that. Big green button, 'start your free trial'. Small print says Android later this year?? I'm on Android. Hang on, web app works today. fine. Click.",
+  "journey": [
+    "Landed on the home page, got the hook straight away (the mustard x3 joke is us), tapped Start your free trial",
+    "Wanted the price before the sign-up. On my phone the nav only shows Get the app, no Pricing link, so I scrolled to the footer and found it there",
+    "Pricing: $0 / $3.99 / $6.99. Household looks like the one for me and my partner. The table runs off the right edge, so I saw the price cut at '/m' and the button cut at 'Start 14-day'. I had to swipe sideways to see the plan I actually wanted",
+    "Read the tiny grey asterisk text: billed annually, $47.88, trial turns into an annual plan unless I cancel before day 14. That is exactly the thing I stopped doing",
+    "Opened the FAQ: monthly is $5.99, so the real price without the annual lock-in is 50% higher than the big number. Also 'why do you need my card' answer says nothing about why",
+    "Tapped Start free under Starter expecting no card. It goes to the same page titled 'Start your 14-day free trial' with card fields. So there is no real free plan without a card, or at least I could not find one",
+    "Sign-up page: email, password (12+ chars), card number, expiry, CVC, all on one screen. The step line says 1. Account > 2. Payment > 3. Invite your household, but it is all one form, so the steps mean nothing",
+    "Stopped at the card number field. Would not type a card into a trial that rolls into an annual charge on day 14 without having seen a way to cancel",
+    "Never found the cancel-trial instructions anywhere on pricing or sign-up"
+  ],
+  "usability": {
+    "score": 45,
+    "completed_main_task": false,
+    "blockers": [
+      "Card details are required up front for a '14-day free trial' that converts to an annual charge. The 'Start free' $0 plan button leads to the same card form, so there is no card-free way in.",
+      "No visible way to cancel the trial or any hint of how, only 'unless cancelled before day 14'.",
+      "Product is promised on iOS soon and Android 'later this year'. The web app 'works today', but the sign-up never says whether the trial is the web app or what I would get on my Android phone."
+    ],
+    "friction": [
+      "At phone width the nav hides Pricing and Privacy, leaving only 'Get the app'. Pricing is only reachable from the footer on the landing page.",
+      "The pricing table scrolls sideways, so the recommended Household column is cut off: price '/mo*' and the trial button are half hidden, and nothing tells me to swipe.",
+      "The headline price of $3.99/mo is the annual rate; the monthly price of $5.99 is in a closed FAQ item.",
+      "Billing terms are in 12px pale grey text with low contrast.",
+      "The sign-up page shows three steps but has one long form with five fields, and the step labels do not match the form.",
+      "Password placeholder asks for 12+ characters on a phone keyboard before I have even seen a feature work.",
+      "The product tour video is 'coming soon', so I cannot see the app in action before paying."
+    ]
+  },
+  "works": [
+    "The hero line and the fake pantry screen with 'Dijon mustard x3 stop!' sell the idea in two seconds.",
+    "Sign-up page opens with 'You won't be charged today' and the plan price right under the title.",
+    "Clear plan names and a highlighted 'most popular' plan.",
+    "Inputs are full width, big enough to tap, and the card field brings up a number keypad."
+  ],
+  "fails": [
+    "The trial is card-first, which is the pattern that burned me before.",
+    "Both 'start free' and 'start trial' end up at the same card form.",
+    "Annual billing is hidden behind an asterisk and tiny grey text.",
+    "No cancel path and no reminder promise beyond 'we will email you three days before your trial ends', and only in an FAQ.",
+    "Privacy page and sign-up text mention partner offers, so 'by continuing you agree' also covers my pantry data being used for ads.",
+    "Android availability is vague ('later this year')."
+  ],
+  "missing": [
+    "A real free plan or trial with no card.",
+    "A one-tap way to cancel, stated before I enter the card.",
+    "A short try-it-now demo, or the tour video.",
+    "Pricing in the phone nav.",
+    "Monthly price next to the annual one in the table.",
+    "A clear note about what 'web app works today' means on my phone."
+  ],
+  "said": [
+    "Okay the mustard x3 thing is genuinely us, we have three jars and I am not joking.",
+    "Why is the free plan asking for my card? That is not free, that is a countdown.",
+    "I can't even see the Household button on my phone, it's cut off at the edge. Did they test this on a phone?",
+    "$3.99 a month, lovely, oh it's $47.88 in one hit. And monthly is $5.99. No thanks, I stopped doing annual.",
+    "Where do I cancel? I'm not putting my card in until I know that.",
+    "Just let me add one eggs and one spinach and see if I like it first."
+  ],
+  "unsaid": [
+    "I wanted to buy this in the first thirty seconds. The impulse was real. The card form is the point where it dies, and I would not think twice about it, I would just close the tab and not come back.",
+    "My attention was gone by the time I had to swipe the table sideways. Anything that needs me to hunt on a phone I treat as a no, and I would never tell them it was because of my ADHD, I would just say I got distracted.",
+    "I know myself: I would sign up, forget day 11, and get charged $47.88 on day 14. That is exactly what happened with the last two apps. The three-day email is the only thing that would save me, and it sits in an FAQ I almost did not open.",
+    "The tiny grey asterisk text looked like it was hiding something. If I had been less careful I would have missed it, and that makes me trust them less than the price itself.",
+    "I would screenshot the 'Dijon mustard x3' phone mock-up and send it to my partner with 'this is us lol', then never open the sign-up page again.",
+    "The partner-offers line on the sign-up page bothers me more than I would say out loud. Selling what is in my fridge to supermarkets feels creepy, but it is not the thing that makes me bounce."
+  ],
+  "verdict": {
+    "decision": "maybe",
+    "why": "The idea matches my life exactly and the first screen sold me, but the path to try it demands a card for a trial that rolls into an annual charge, the free plan is not card-free, and on a phone the plan I want is half off screen. That is the exact pattern I have stopped paying for.",
+    "what_would_flip": "A way to try it with no card (even a limited free plan), the monthly price shown beside the annual one, a plainly stated one-tap cancel, and a Household plan I can read on my phone without swiping."
+  },
+  "extra": [
+    {
+      "key": "would_pay",
+      "label": "Would pay",
+      "type": "bool",
+      "value": false
+    },
+    {
+      "key": "price_point",
+      "label": "Price I would call fair",
+      "type": "text",
+      "value": "About $3 a month on a monthly plan I can cancel in one tap. I would pay annual only after a few months of actually using it."
+    },
+    {
+      "key": "walk_away_price",
+      "label": "Walk-away price",
+      "type": "text",
+      "value": "$5.99 a month is already too much for something I have not seen work. $47.88 up front on a card taken before I try it is a no."
+    },
+    {
+      "key": "alternative",
+      "label": "What I would buy instead",
+      "type": "text",
+      "value": "Nothing paid. A shared note on my phone with my partner, or a free fridge-list app. I know it is worse, but it costs nothing and I will not forget to cancel it."
+    },
+    {
+      "key": "trigger",
+      "label": "What would trigger the purchase",
+      "type": "text",
+      "value": "Adding a few items on my phone with no card and no account wall, seeing the expiry nudge fire on something real, then a prompt to upgrade with a monthly option."
+    },
+    {
+      "key": "barrier",
+      "label": "What stops me",
+      "type": "text",
+      "value": "The card up front, the annual billing tucked in grey small print, no visible cancel route, and the fact that I cannot tell whether it works on my Android phone."
+    }
+  ]
+}

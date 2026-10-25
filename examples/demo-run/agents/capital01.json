@@ -1,0 +1,133 @@
+{
+  "id": "capital01",
+  "group": "capital",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "opened the home page on a laptop and read the hero, the six feature tiles, the quote and the video block",
+    "followed Pricing from the nav and read the plan table, the footnote and all four FAQ answers",
+    "opened the pricing page at phone width and saw only the first plan and a clipped second column",
+    "opened sign-up and read every field, the line under the button and the step indicator",
+    "read the privacy page end to end",
+    "read the stylesheet for the phone breakpoint and the form input sizes",
+    "looked for a link into the web app, an app store badge, a household invite screen, a referral or sharing mechanic and a real product screenshot; found none",
+    "submitted nothing; stopped at the card fields, which sit on the first screen next to email and password"
+  ],
+  "name": "Rebecca Lund",
+  "age": 42,
+  "role": "Partner",
+  "org": "Northgate Seed",
+  "location": "London, UK",
+  "real_person": false,
+  "background": "Backs consumer subscription apps at pre-seed. Former growth lead at a meal-kit company who watched retention collapse once promotions ended.",
+  "disposition": "interested",
+  "first_10s": "Okay, 'Know what's in the fridge before you shop', clean, I get it in one line. Phone mock-up with Flat 3B and 'Shared with Sam, Priya and Jo', good, they know the buyer is the household and not one person. Free trial button. Pricing. Oh, $3.99... asterisk. Right, annual. Where's the invite step, where's the loop? That's the only thing I came for.",
+  "journey": [
+    "Landed on the home page on a laptop. Read the pitch and noticed the shared-household framing in the mock-up.",
+    "Scrolled the six tiles. 'One list, many people' is the only one that touches my thesis, and it is a feature description, not a growth mechanism.",
+    "Looked for proof: one quote from 'a beta household of four', no name, no number. Video block says coming soon.",
+    "Clicked Pricing. $3.99/mo headline, asterisk, annual billing $47.88 in the footnote at 12px. Monthly price of $5.99 is inside a collapsed FAQ.",
+    "Opened the FAQ on card capture. The answer is 'it keeps the trial smooth for your whole household', which is not a reason.",
+    "Checked pricing at phone width: the Household column, the one they want people to pick, is cut off at the right edge and has to be swiped to find.",
+    "Opened sign-up. Step bar says three steps and step 3 is 'Invite your household', but the whole first screen is email, password and a full card. The invite, my one interest, comes last, after the card.",
+    "Read the line under the button: terms and privacy 'including partner offers'. Consent is bundled.",
+    "Opened privacy. 'May share anonymised and aggregated shopping insights with retail and brand partners.' Second revenue line is data.",
+    "Stopped at the card field. Would not type a card into a pre-launch product with no visible way into the app."
+  ],
+  "usability": {
+    "score": 38,
+    "completed_main_task": false,
+    "blockers": [
+      "No route into the web app from the site. The hero says 'Web app works today' and every button leads to a sign-up form that, when sent, only shows 'demo site, nothing created'. I cannot see the household invite at all, which is my whole question.",
+      "Card number, expiry and CVC are on the first screen with email and password, before any product has been shown. A trial that converts to an annual charge, asked for up front, with no preview of the app.",
+      "On a phone the nav links are hidden at 760px and below, so Pricing is not reachable from the header; it is only in the footer or by guessing the URL."
+    ],
+    "friction": [
+      "Pricing table has a 760px minimum width, so on a phone the recommended Household plan is clipped and the trial button for it is half off screen.",
+      "The headline price is the annual-billed rate with only an asterisk. The $5.99 and $9.99 monthly prices appear only in a collapsed FAQ.",
+      "Form inputs are 15px, which makes iOS zoom the page when a field is focused. The card field is the first thing you hit.",
+      "Step indicator shows step 3 is the household invite but nothing says whether it can be done before payment.",
+      "'See how it works' scrolls to a placeholder video.",
+      "No app store badges; iOS 'soon', Android 'later this year'."
+    ]
+  },
+  "works": [
+    "One-line promise lands in about three seconds and is specific to a household, not an individual.",
+    "The phone mock-up shows 'Shared with Sam, Priya and Jo' and 'Sam added', so the multi-person model is visible straight away.",
+    "Starter at $0 for 1 member gives a clear reason to invite someone: it forces the upgrade at the household boundary.",
+    "Plan tiers are priced by household size (5 and 10 members), which makes a seat count a natural thing to grow.",
+    "Pricing and sign-up say plainly that the trial converts to an annual plan unless cancelled before day 14, and the sign-up page says you will not be charged today."
+  ],
+  "fails": [
+    "Invite loop is not a product surface on the site at all. It is a tile, a mock-up caption and step 3 of a form. I cannot tell whether the invitee needs an account, a card or a download.",
+    "Starter is capped at 1 member, so the free tier cannot be the seed of a household loop. Anyone invited to a paid household presumably joins free, but nothing says so.",
+    "Card capture with annual conversion on a trial the founders cannot yet show is the same pattern that sent my old meal-kit cohorts to chargebacks after the first renewal.",
+    "'Most households save more than the subscription' has no number behind it, and the testimonial is unattributed.",
+    "Partner offers and 'shopping insights' shared with retailers make the data business the real second product, and it is bundled into the consent line rather than separate."
+  ],
+  "missing": [
+    "Any screen of the actual app, beyond the illustration.",
+    "What the second household member sees on first open, and whether they can join without paying or entering a card.",
+    "Any retention number, even from the beta: week 4 and week 12 active households, invites sent per household, share of households with 2+ active members.",
+    "Trial-to-paid conversion, and what share of buyers choose annual versus monthly.",
+    "Who the founders are.",
+    "Whether receipt OCR actually works on UK receipts; there is no demo, no accuracy figure."
+  ],
+  "said": [
+    "I came for one thing, the household invite, and the invite is step three, after the card. That's backwards for me. The whole thesis is that a second person makes this sticky. Show me that before you ask for a card.",
+    "The 'works today' line on the web app, and then no link to the web app. Every button goes to a payment form. That reads as a pre-launch deck with a Stripe page stapled on.",
+    "$3.99 is not $3.99. It's $47.88 a year, and the monthly price is $5.99 hidden in a FAQ. I don't mind annual billing but don't show me the discounted number as the headline.",
+    "On my phone the plan you want everyone to pick is half off the screen. And the nav is gone, so I can't even get to Pricing without scrolling to the footer. Have someone check the phone path before anyone sees this.",
+    "'Most households save more than the subscription.' Which households? How many? Give me one number from the beta and I'll listen.",
+    "Meal-kit taught me what a card-up-front trial does to retention: you get a tidy day-14 conversion and a nasty month-two cliff. I'd want the cohort curves split by trial type.",
+    "I'd take a call, I would not wire money off this."
+  ],
+  "unsaid": [
+    "I like the idea more than I'm letting on. A fridge list shared by four people is a real habit, and it's the kind of product where the second user is worth more than the first. That's rare, and it's the only reason this tab stays open.",
+    "I would never say it in a pitch meeting, but I stopped trusting the site at the card field, not at the missing video. The video is a startup being early. Asking for a card before showing a screen is a founder choice.",
+    "The privacy line about retail partners is what I'd really worry about, not what I'd lead with. If the money is in retail media then the household is the inventory, and that changes who the customer is. I'd ask about it in the second call, not the first, to see whether they bring it up.",
+    "I'd screenshot the clipped Household column on the phone and send it to a partner with no caption. The caption would be 'nobody tested this on a phone'.",
+    "Behaviour: I'd bookmark it, not sign up, and set a reminder to look again when the iOS app exists. I'd tell the team this is a 'watch' not a 'meet'.",
+    "I distrust the anonymous beta quote. It's too well-written, 'Mostly.' is a copywriter's joke. I'd assume it's invented until someone gives me a name."
+  ],
+  "verdict": {
+    "decision": "maybe",
+    "why": "The household framing is the right shape for a retention argument, but the site shows no invite loop, no app, no number and puts a card in front of everything. I can't form a view on the one thing I came for.",
+    "what_would_flip": "Beta cohort data showing the share of households with 2 or more active members at week 8, plus a screen recording of the invite flow with the second person joining without paying. And a sign-up that shows the product before it asks for a card."
+  },
+  "deal": {
+    "entry": "CONDITIONAL",
+    "ticket": "GBP 250k, with room to GBP 400k in a round led by someone else",
+    "valuation": "GBP 4m to 6m pre-money; I would pay up to GBP 7m pre if week-8 multi-member retention is above 50%. Today, with nothing but a site, I would not go above GBP 3.5m.",
+    "instrument": "UK Advance Subscription Agreement or SAFE with a valuation cap, 20% discount, pro-rata rights. Priced equity only at a seed round led by a larger fund.",
+    "conditions": [
+      "At least 300 beta households live, with 40% or more having 2 or more active members at week 4.",
+      "Week-8 household retention of at least 45% for households with 2+ members, shown as cohorts, not a blended figure.",
+      "Invites per household of at least 1.5 in the first 14 days, with the share of invitees who become active.",
+      "Trial to paid at or above 35% on card-up-front, and a comparison cohort with no card, for at least 100 households each.",
+      "Receipt scan accuracy of 85% or better on 200 real UK receipts, measured by us."
+    ],
+    "red_lines": [
+      "Selling household-level or identifiable purchase data to retailers.",
+      "Partner-offer consent bundled into the terms line: it has to be a separate, off-by-default opt-in before any money moves.",
+      "Founders not willing to show me the raw cohort export."
+    ],
+    "offers": [
+      "Introductions to two UK grocery retailer loyalty teams through my meal-kit years, for pilots on partner offers done on an opt-in basis.",
+      "A hire: a growth lead from my old meal-kit company's retention team, whom I would introduce within the first month.",
+      "A seat at a founders' dinner for pre-seed consumer subscription founders in London each quarter, to compare cohort data."
+    ],
+    "wants": [
+      "A product where the second household member arrives free and becomes the reason the first one doesn't churn.",
+      "Founders who treat household retention as the core metric and publish it to us monthly.",
+      "A clear choice between subscription and retail data as the main business within 12 months."
+    ],
+    "refuses": [
+      "A pivot to a pure retail-media business that treats households as inventory.",
+      "Raising on annual prepaid plans to flatter revenue without disclosing refund and chargeback rates.",
+      "Spending the round on paid acquisition before the invite loop is proven."
+    ],
+    "board_terms": "Board observer seat, monthly cohort and invite-funnel reporting, pro-rata in the seed. No board seat at this ticket.",
+    "conviction": 4
+  }
+}

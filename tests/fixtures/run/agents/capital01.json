@@ -1,0 +1,15 @@
+{
+  "id": "capital01", "group": "capital", "visited": true, "visit_method": "browser",
+  "evidence": ["opened /", "opened /pricing"],
+  "name": "Cleo Placeholder", "disposition": "hostile",
+  "first_10s": "Another notes app. Show me retention.",
+  "journey": ["scanned the home page", "read pricing"],
+  "usability": { "score": 90, "completed_main_task": true, "blockers": [], "friction": [] },
+  "works": ["clean"], "fails": ["no proof of retention"], "missing": ["metrics"],
+  "said": ["Pass for now."], "unsaid": ["I have seen this deck forty times."],
+  "verdict": { "decision": "no", "why": "No retention data.", "what_would_flip": "Month-6 retention above 30%." },
+  "deal": { "entry": "NO", "ticket": "0 now, 300k USD later", "valuation": "4M USD pre-money would reopen it",
+            "instrument": "SAFE", "conditions": ["month-6 retention above 30%"], "red_lines": ["selling user data"],
+            "offers": ["intro to two distribution partners"], "wants": ["focus on one segment"],
+            "refuses": ["paid acquisition before retention"], "conviction": 2 }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "consumers01", "group": "consumers", "visited": true, "visit_method": "http",
+  "evidence": ["fetched /", "fetched /pricing"],
+  "name": "Ben Sample", "disposition": "interested",
+  "first_10s": "Looks neat <script>alert(1)</script>",
+  "journey": ["read the home page"],
+  "usability": { "score": 80, "completed_main_task": true, "blockers": [], "friction": ["annual billing"] },
+  "works": ["fast"], "fails": [], "missing": [],
+  "said": ["I'd try it."], "unsaid": ["I will forget to cancel."],
+  "verdict": { "decision": "maybe", "why": "Annual billing.", "what_would_flip": "Monthly plan." },
+  "extra": [ { "key": "would_pay", "label": "Would pay", "type": "bool", "value": true } ]
+}

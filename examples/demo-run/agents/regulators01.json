@@ -1,0 +1,153 @@
+{
+  "id": "regulators01",
+  "group": "regulators",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the landing page at desktop width and read the feature copy, the hero small print and the footer",
+    "Opened /pricing, read the plan table, the asterisk footnote and all four FAQ answers",
+    "Followed 'Start free' (Starter) and 'Start 14-day trial' (Household) and compared where they led",
+    "Opened /signup at desktop width, read every field, the plan sentence and the consent line under the button",
+    "Opened /privacy and read it line by line against what the landing page and signup promise",
+    "Read the stylesheet to check the colour of the fine print against its background",
+    "Did not walk the sign-up path at phone width: my device is desktop"
+  ],
+  "name": "Ines Corvalan",
+  "age": 39,
+  "role": "Data protection lawyer",
+  "org": "Independent practice, consumer apps",
+  "location": "Dublin, Ireland",
+  "real_person": false,
+  "background": "Advises consumer apps on GDPR. Reads privacy pages for a living.",
+  "history": "Handled two regulator complaints about retail data sharing sold as 'offers'.",
+  "disposition": "hostile",
+  "first_10s": "Nice green leaf, 'shared pantry'. Fine. Scroll. 'Scan a receipt'. Receipt. Right, that is purchase history with a store name and prices on it. 'Partner offers... based on your pantry.' And there it is, in the feature grid like it is a coupon book. Straight to the privacy page, before I even look at the price.",
+  "journey": [
+    "Landed on the home page. Skipped the hero, went to the feature grid, stopped on 'Scan to add: a barcode or a receipt' and then 'Partner offers: discounts from our retail partners on the things you actually buy, based on your pantry'.",
+    "Went to Privacy before Pricing. Found five bullets and no controller address, no lawful basis, no retention except for receipt images, no rights beyond 'email us to delete', no mention of transfers, cookies or processors.",
+    "The partner line says 'anonymised and aggregated shopping insights... to power offers and market research'. The home page says offers are based on 'your pantry'. Offers aimed at one household cannot come from aggregates. One of the two statements is wrong.",
+    "Opened Pricing. Headline '$3.99/mo' with a tiny asterisk: billed annually at $47.88, excluding local taxes, and the trial converts to a paid annual plan. The FAQ then says monthly is $5.99. So the real monthly price is 50 percent higher than the one in large type.",
+    "Opened the FAQ 'Why do you need my card for the free trial?'. The answer is 'it keeps the trial smooth for your whole household'. That is not an answer. It says nothing about conversion or how to cancel.",
+    "Followed 'Start free' on the $0 Starter plan. It lands on the same page, headed 'Start your 14-day free trial', with a card field and the Household annual plan already chosen. There is no route to the free plan without a card.",
+    "On the signup form: email, 12-character password, card number, expiry, CVC. A step bar 'Account > Payment > Invite your household' hints at a three-step flow but everything is on one page. Under the button: 'By continuing you agree to our Terms and Privacy notice, including partner offers.' No checkbox, and 'Terms' is plain text with no link. I stopped there; I would not type a card in."
+  ],
+  "usability": {
+    "score": 35,
+    "completed_main_task": false,
+    "blockers": [
+      "No way to take the $0 Starter plan without entering card details: the 'Start free' button leads to a card form for the paid Household plan",
+      "Consent to partner offers is bundled into acceptance of Terms with no separate, unticked choice, although the home page calls these offers 'optional'",
+      "The 'Terms' the form asks me to accept are not linked and do not appear to exist on the site"
+    ],
+    "friction": [
+      "The headline price ($3.99/mo) is not a price you can buy monthly; the monthly price ($5.99) appears only in an FAQ drawer",
+      "Prices shown exclusive of tax to an Irish visitor, which is not how consumer prices may be shown in the EU",
+      "Fine print is #9aa59f on white, about 2.5:1 contrast, and it carries the auto-conversion terms and the consent line",
+      "Step bar shows 3 steps on a one-page form",
+      "No statement of how to cancel, only 'unless you cancel'"
+    ]
+  },
+  "works": [
+    "Receipt images are kept for 30 days and then only extracted items remain: a stated retention period, which is more than most give",
+    "The signup page states the amount that will be charged after the trial ($47.88/year) at the point of entry",
+    "An email three days before the trial ends is promised in the FAQ",
+    "The privacy page is short, readable and not hidden"
+  ],
+  "fails": [
+    "'Anonymised and aggregated' is used as one word. Anonymised data is outside GDPR; aggregated is not necessarily anonymous. The page never says which it is, nor how re-identification of a 2 to 5 person household is prevented",
+    "'Offers based on your pantry' on the home page contradicts 'aggregated insights' on the privacy page: personalised offers need profiling of identifiable users and a lawful basis, probably consent",
+    "Receipts hold store, date, items and prices, and often a loyalty number or card digits. Items can reveal health, religion or pregnancy. No mention of special categories",
+    "Household members' names and emails are collected from people who never saw this page. No notice to them, and everyone in the household can see every item and who added it",
+    "No controller address, no DPO or contact for rights requests, no supervisory authority, no recipients, no international transfers, no lawful basis per purpose",
+    "Receipt images kept 'to improve recognition' means training a model on personal data under an unstated basis",
+    "Deleting by 'email us' within 30 days covers erasure only, not access, objection or portability, and puts the burden on the data subject",
+    "Analytics are listed in collection, with no cookie or tracker notice",
+    "The 'Starter' plan says it is free, then the button asks for a card"
+  ],
+  "missing": [
+    "Terms of service",
+    "A separate, unticked consent for partner offers, with an easy withdrawal",
+    "A list of the retail and brand partners, or at least categories, and what exactly they receive",
+    "Lawful basis and purpose for each data type",
+    "A cancel path and the cooling-off right for digital subscriptions",
+    "A cookie notice",
+    "Controller registered address and contact for rights requests"
+  ],
+  "said": [
+    "'Anonymised and aggregated.' You do not get both words for free. Which one is it? Aggregated across how many households, and what stops a partner linking it back to a flat of three?",
+    "The home page sells offers 'based on your pantry'. The privacy page says partners only get aggregated insights. Both cannot be true, and I have seen this exact gap end up on a regulator's desk.",
+    "'Optional' on the home page, then 'including partner offers' folded into the line that says I agree to the Terms. That is not optional, that is bundled. And there is no tick box.",
+    "I pressed 'Start free' on the $0 plan and got a card form for the annual Household plan. Free plan, card required. Say that on the button.",
+    "$3.99 a month is billed as $47.88 in one hit, tax extra, and rolls over unless I cancel by day 14. 'Keeps the trial smooth' is not a reason for taking my card.",
+    "I would not put a card into that form and I would not put a client's household through it either.",
+    "If you want a pass from me you need a real privacy notice: partner categories, a consent per purpose, a lawful basis table, and receipts treated as what they are, purchase history."
+  ],
+  "unsaid": [
+    "The product is not what worries me. A shared pantry list is harmless. The 'Partner offers' tile is the actual business: the app is the funnel, the receipts are the stock, and the subscription is there to make the data look like a side effect.",
+    "I read the privacy page before the price, because that is where the revenue model hides. I would screenshot the 'anonymised and aggregated' line and the 'based on your pantry' line next to each other and send it to a colleague with no comment, like evidence for a file.",
+    "I enjoyed finding the inconsistency. The fine print is deliberately pale (the stylesheet even says so in a comment), so someone chose to make the auto-renewal and the consent line hard to read. That moves my view from careless to knowing.",
+    "I would not bother to complain. I would close the tab and put the domain on my list of things I will see again in a complaint file in a year.",
+    "A small part of me notes that the 30-day receipt-image retention and a plain-language page suggest somebody here half tried. That is the only reason I am not even angrier, and I would not tell them.",
+    "If a friend asked whether to sign up I would say use the Starter plan with a throwaway card, and I would feel a small pang that the free plan needs one at all."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "The partner-sharing story is inconsistent between pages, consent is bundled and not optional in practice, the free plan demands a card, and the headline price hides the annual lump sum and the tax. I would not enter details or advise a client to launch this as it stands.",
+    "what_would_flip": "A privacy notice with lawful basis per purpose, named partner categories and what they receive, a separate unticked consent for offers, a real free tier without a card, VAT-inclusive prices, and a visible cancel route."
+  },
+  "extra": [
+    {
+      "key": "legal_basis",
+      "label": "Legal basis",
+      "type": "text",
+      "value": "Cannot be assessed from the notice, because it states none. Pantry and receipt processing for the core service could rest on contract (Art 6(1)(b)). Sharing with retail and brand partners for offers and market research cannot rest on contract; it needs consent (Art 6(1)(a)) or a legitimate-interest balancing test I doubt would survive, plus ePrivacy consent for device-level analytics. To answer properly I would need the purpose-by-purpose basis, the DPIA, the partner list and the data-sharing agreements."
+    },
+    {
+      "key": "data_flows",
+      "label": "Questionable data flows",
+      "type": "list",
+      "value": [
+        "Receipt data (store, date, items, prices, possibly loyalty or partial card numbers) to 'retail and brand partners'. Recipients unnamed, fields unspecified.",
+        "'Anonymised and aggregated' insights from households of 1 to 10 people. Small groups make singling out likely, so the data may stay personal data.",
+        "Personalised offers 'based on your pantry', which implies profiling of an identifiable account, a different flow from the aggregate one described in the notice.",
+        "Receipt images kept 30 days 'to improve recognition': secondary use (model training) under no stated basis.",
+        "Names and emails of invited household members, collected without the person ever seeing a notice.",
+        "Inferences about health, diet, religion or pregnancy from purchased items, potentially special category data under Art 9, never addressed.",
+        "Usage analytics with no tracker or cookie disclosure."
+      ]
+    },
+    {
+      "key": "ip_licence",
+      "label": "IP and licensing",
+      "type": "text",
+      "value": "Nothing visible to assess: no Terms, no content licence, no statement on who owns scanned receipt images or the derived item and price data, nor on any licence granted to partners over it. I would need the Terms and the partner agreements. The anonymous 'beta household' quote and the 'most households save more than the subscription' claim also need substantiation."
+    },
+    {
+      "key": "consumer_law",
+      "label": "Consumer law",
+      "type": "list",
+      "value": [
+        "Price shown excluding tax to consumers: EU price indication and consumer rights rules expect the all-in price, including VAT, in Ireland.",
+        "Headline '$3.99/mo' is only available as a $47.88 annual payment; the real monthly price of $5.99 sits in an FAQ drawer. Misleading price presentation under the Unfair Commercial Practices Directive.",
+        "Free trial that converts to a paid annual plan with the card taken up front: the conversion, the amount and the cancellation route must be clear before purchase. Here the key terms sit in low-contrast footnotes.",
+        "'Start free' for a $0 plan leads to a card form for a paid plan, which looks like a bait and switch or a dark pattern.",
+        "Terms are referenced but not provided; the consumer cannot read the contract they accept.",
+        "No stated withdrawal right for the digital service.",
+        "Bundling partner-offer consent into acceptance of the Terms conflicts with the GDPR rules on freely given, specific consent (Art 7(2) and (4)).",
+        "'Most households save more than the subscription' is an unsubstantiated savings claim."
+      ]
+    },
+    {
+      "key": "exposure",
+      "label": "Actual exposure",
+      "type": "text",
+      "value": "Realistic exposure is a complaint to the data protection authority about consent and transparency, or to the consumer protection authority about the trial and pricing. The partner-sharing line is the likeliest trigger, and it is the one a regulator already understands. Fines for a small company would sit well below the statutory maximum, but the corrective orders (stop the sharing, delete what was shared, rewrite the flow) would hit the business model itself. I cannot see partner contracts or the real data pipeline, so I can only say the notice does not support the flows, not that the flows are unlawful."
+    },
+    {
+      "key": "severity",
+      "label": "Severity: low, medium, high, critical",
+      "type": "text",
+      "value": "high"
+    }
+  ]
+}

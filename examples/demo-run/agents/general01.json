@@ -1,0 +1,101 @@
+{
+  "id": "general01",
+  "group": "general",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the home page and read it top to bottom at phone width (about 390 px) and at tablet-ish desktop width",
+    "Read the page styling to judge text size, grey text contrast and what happens to the nav on a narrow screen",
+    "Opened Pricing at phone width, looked at the plan table, read the small print under it and opened the FAQ questions",
+    "Opened the sign-up page, read every field and every line of text around the form, and went as far as the card number boxes without typing anything",
+    "Opened the Privacy page and read the bullet list",
+    "Did not submit the form; I stopped at the card number box"
+  ],
+  "name": "Doreen Achterberg",
+  "age": 68,
+  "role": "retired school secretary",
+  "location": "Leeds, UK",
+  "real_person": false,
+  "background": "Lives with her husband and a lodger who is a nursing student. Shops weekly at the same supermarket and keeps a paper list on the fridge.",
+  "history": "Signed up to a magazine subscription she could not cancel online and had to phone three times. Distrusts anything that asks for a card for free.",
+  "disposition": "skeptical",
+  "first_10s": "Big heading, that's good, I can read that. 'Know what's in the fridge before you shop.' Well, I've got a list on the fridge door, thank you. Two green buttons. 'Start your free trial'. Free. Hmm. Everybody says free. Underneath it's all that pale grey writing, I can hardly make it out even with my glasses on. 'Free for 14 days' - I think that's what it says. Is it an app or a website? It says iOS soon. So I can't even get it on my iPad yet? Right.",
+  "journey": [
+    "Landed on the home page. The big heading and the two green buttons were easy to see. The line underneath them, 'Free for 14 days. Available on iOS soon...', is small pale grey and I could barely read it. That is the line that says whether it works on my iPad, and it says 'soon'.",
+    "Scrolled down the feature boxes. Titles are dark and readable, the text under each title is pale grey and small. I gave up reading most of them. 'Partner offers' made me stop: 'discounts... based on your pantry'. So someone is watching what is in my cupboards.",
+    "At the bottom there is a black box with a play button for 'Product tour video coming soon'. So the one thing that might have shown me what this does is not there.",
+    "Went to Pricing on the phone-sized screen. The heading is fine, but the table is wider than the screen. I could see 'Starter' and half of 'Household'; the price looked like '$3.99/m' with the end cut off. I would not know there was a third plan or that I had to slide it sideways. Nothing tells me to.",
+    "Below the table, in tiny pale print: '* Billed annually ($47.88 and $83.88 per year)... Trial converts to a paid annual plan unless cancelled before day 14.' The $3.99 a month is really $47.88 taken in one go. I had to read it twice with my finger on the screen.",
+    "Opened 'Why do you need my card for the free trial?' The answer is 'It keeps the trial smooth for your whole household.' That is not an answer. Opened 'Can I pay monthly?' and found it is $5.99, a good deal dearer than the $3.99 shown in large print.",
+    "Went to sign-up. First line is 'Start your 14-day free trial', then 'You won't be charged today. Your Household plan ($47.88/year) starts after the trial unless you cancel.' So it picked a plan for me without my choosing one. The form wants email, a password of at least 12 characters, and then the full card number, expiry and CVC. The step bar says '1. Account > 2. Payment > 3. Invite your household' but all of it is on one page, and it is tiny pale grey text.",
+    "Stopped at the card number. I would not type it. Closed it.",
+    "Had a quick look at Privacy, as that is where I would look for what they do with my shopping. It says they may share 'anonymised and aggregated shopping insights' with retail and brand partners, and that to delete my data I must email them and wait up to 30 days."
+  ],
+  "usability": {
+    "score": 22,
+    "completed_main_task": false,
+    "blockers": [
+      "The sign-up wants a full card number, expiry and CVC before I have seen a single thing the product does. There is no way to try it without a card. For me that ends it.",
+      "The sign-up quietly picks the Household plan ($47.88 a year) for me. I never chose it. I cannot tell from the form how to choose another or how to take the free Starter plan I saw on Pricing.",
+      "On a phone-width screen the plan table runs off the right-hand edge. Household is cut off and Family+ is out of sight completely, with no arrow or note to slide across. I would not know it was there."
+    ],
+    "friction": [
+      "Most of the explanatory writing is pale grey on off-white. With low vision and 150% zoom it is close to unreadable, and the lines that matter most (free for 14 days, the billing small print, the sign-up explanation) are exactly the ones in the palest grey.",
+      "Text in the sign-up form is small (labels about 13 px, steps line about 12 px, fine print 12 px). At 150% zoom it still is not comfortable.",
+      "On a phone the menu collapses to a single 'Get the app' button, so Pricing and Privacy can only be reached from the footer, which is small and grey.",
+      "'Get the app' and 'Start your free trial' both lead to a card form. There is no button that just says what it does.",
+      "The home page says iOS is 'soon', but the buttons say 'Get the app'. I am on an iPad. Is it a website, an app, or neither? I could not tell.",
+      "The promised video tour is not there.",
+      "Annual price shown large with a star, monthly price hidden in a FAQ drop-down. I had to open three bits of the page to work out what I would actually pay."
+    ]
+  },
+  "works": [
+    "The main headings are big, dark and clear. I could read those without trouble.",
+    "The two big green buttons at the top are easy to spot and easy to press with a thumb.",
+    "The picture of the pantry list on the home page explains the idea faster than any of the words: it looks like my fridge list, but on a screen.",
+    "Plain wording in places: 'Privacy, in plain words' is a decent heading, and 'You won't be charged today' is at least said on the sign-up page itself rather than hidden.",
+    "FAQ answers open with one touch and are short."
+  ],
+  "fails": [
+    "'Free' trial that needs my card. This is exactly the thing that got me stuck with the magazine. The explanation given for needing it does not explain anything.",
+    "The real cost is not in big letters anywhere: $3.99/mo is billed as $47.88 a year, and the monthly option is $5.99. I only found that by reading small grey writing and the FAQ.",
+    "I cannot see the whole price table on a phone.",
+    "Nowhere does it say how I cancel. The small print says 'cancel before day 14' but not where or how. After the magazine, that is the first thing I look for.",
+    "Pale grey small print for the very things I need to read.",
+    "'Partner offers... based on your pantry' and 'share anonymised and aggregated shopping insights' make me feel I am the product.",
+    "The page for the video says 'coming soon'. If the product is not ready enough to show, why is it asking for my card?"
+  ],
+  "missing": [
+    "A way to look around, or try it, without giving a card.",
+    "A plain line saying how to cancel and that I can do it by phone or email, not only on the screen.",
+    "A telephone number or a named person. There is only an email address that looks like a placeholder.",
+    "The real price in big letters, one figure, what I pay and when.",
+    "Large-print or high-contrast mode, or just darker writing.",
+    "A clear answer on whether it works on my iPad today.",
+    "Any sign that a person like me is meant to use this. All the pictures are young people in a flat."
+  ],
+  "said": [
+    "Free trial, but you want my card? No thank you. I have been through that with a magazine and I am not doing it again.",
+    "I can read the big writing, but all the little bits underneath are that pale grey. I can't see what it's telling me. If it's important, make it black.",
+    "It says $3.99 and then in tiny print it's actually nearly fifty dollars in one go. That's not what I'd call three ninety-nine.",
+    "The table goes off the side of the screen. I can see one and a half boxes. How would I know there's another one?",
+    "It asked me why they need my card and the answer was 'to keep the trial smooth'. Smooth for who?",
+    "Where does it say how to cancel? That's the first thing I'd want to know and I can't find it anywhere.",
+    "I only wanted to see what it does. I'm not typing in my card number to find out.",
+    "My husband would say just ask the lodger, she's got apps for everything. I would. I'm not signing up to this myself."
+  ],
+  "unsaid": [
+    "She never got as far as thinking about whether the app is any good. Her mind was made up the moment the card box appeared, and everything before that was her looking for a reason not to be right about it.",
+    "She would not say that she could not read half the page. She would blame her glasses, not the site, and she would feel slightly stupid, which is why she would go quiet and shut the tab rather than complain.",
+    "She would not admit she could not tell the table had a third column. She would assume the price list was just short, and go away believing there were two plans.",
+    "She noticed that the sign-up already chose the $47.88 a year plan for her, and that it said 'You won't be charged today' in grey type. She read 'today' as the word that matters. She would not say it out loud, but she heard 'later, when you have forgotten'.",
+    "She spotted 'based on your pantry' in the Partner offers box and the Privacy line about sharing shopping insights. She would not raise it in conversation because she would feel she was being fussy, but it is the thing she would tell her husband about afterwards.",
+    "She will not come back and will not tell anyone why. The tab gets closed and the paper list on the fridge door stays where it is. If the lodger mentions it, she will say 'Hm, I had a look, it wanted a card.' That is the whole review.",
+    "Behind it all: the three phone calls to cancel the magazine are what she is really reacting to. This site has not done anything wrong yet in her eyes, but it looks like the same shape of thing, and that is enough."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "It asks for a full card number before showing anything, picks a yearly plan for me without asking, hides the real price in small pale print, and says nothing about how to cancel. That is the exact pattern that caught me before. On top of that I could barely read half the page and the pricing table ran off the screen.",
+    "what_would_flip": "Let me try it without a card. Put the real yearly price in big black letters next to the monthly one. Say plainly, where I can see it, how to cancel and that I can do it by telephone. Make the small grey writing dark enough to read. Then I would think about it."
+  }
+}

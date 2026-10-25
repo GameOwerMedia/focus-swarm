@@ -1,0 +1,94 @@
+{
+  "id": "commercial02",
+  "group": "commercial",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the landing page and read it top to bottom, then looked at the rendered desktop view",
+    "Opened /pricing, read the three plan columns, the small print under them and all four FAQ answers, and looked at the rendered desktop view",
+    "Opened the sign-up page and read every field, the step line, the reassurance sentence and the consent line; did not submit (the form goes nowhere)",
+    "Opened the privacy page and read all five bullets",
+    "Looked for anything about landlords, letting agents, several houses, an admin role, invoicing or who owns the data, on every page; found nothing",
+    "No phone-width view of the sign-up page was available, so the phone sign-up path was judged only by reading the form (single column, six fields, card details on the first screen). I am a desktop user at the office, so this is secondary for me"
+  ],
+  "name": "Tom Okafor",
+  "age": 47,
+  "role": "Property manager, shared student housing",
+  "location": "Nottingham, UK",
+  "real_person": false,
+  "background": "Manages 40 shared houses. Kitchen disputes and rotting food are a top cause of complaints and deposit deductions. Pays for a facilities ticketing tool he dislikes.",
+  "history": "Has been burned by per-seat software that looked cheap per user and turned out expensive across a portfolio, and by tools that left him holding tenant data he then had to answer for.",
+  "disposition": "skeptical",
+  "first_10s": "Fridge, shopping, mustard. This is for flatmates who text each other, not for me. 'Free for 14 days'. 'Get the app'. Right, but I'm not the one living in the house. Is there a 'for landlords' or 'for property managers' link anywhere? No. Top nav is Features, Pricing, Privacy. Pricing then. Dollars. We're in Nottingham.",
+  "journey": [
+    "Landed on the home page. Headline is about knowing what is in your fridge before you shop. Nothing about shared houses with lots of tenants, nothing about landlords.",
+    "Scrolled the six feature cards. 'One list, many people' is the only one that touches my problem. 'Waste report' is a monthly summary for the household, not for me. 'Partner offers' made me stop: supermarket discounts based on the pantry.",
+    "Noted the small line under the buttons: iOS soon, Android later this year, web app works today. My tenants are students on Android and iPhone, so 'works today' matters, but there is no link to the web app anywhere.",
+    "Went to Pricing. Three plans, per household: Starter $0 for one person, Household up to 5 members, Family+ up to 10. Nothing for forty houses, nothing for one account that sees many houses.",
+    "Read the small print under the table. The $3.99 is really $47.88 a year billed annually. The trial converts to a paid annual plan on day 14. Monthly is $5.99, found only inside a FAQ.",
+    "Opened the FAQ about why a card is needed. Answer says it 'keeps the trial smooth for your whole household'. That is not a reason.",
+    "Clicked Start 14-day trial. Sign-up asks for email, a password of at least 12 characters, and full card details on the first screen. Steps line says 1 Account, 2 Payment, 3 Invite your household, but all of it is on one page and the invite step is last.",
+    "Stopped at the card field. I would not put a company card, or my own, into a trial for something I cannot yet show works for a house of six strangers.",
+    "Read Privacy. 'Everyone in a household can see every item and who added it.' Anonymised shopping insights shared with retail and brand partners. Deletion by emailing a generic address within 30 days. Nothing about who is the controller if I set up a house for tenants, nothing about a data processing agreement."
+  ],
+  "usability": {
+    "score": 20,
+    "completed_main_task": false,
+    "blockers": [
+      "No way to buy it per house as a landlord or agent: no account that owns several houses, no admin who is not a member, no invoice or bill-to-the-landlord option. This is the one thing I came for and it is not there.",
+      "Card number, expiry and CVC are demanded on the first sign-up screen for a 'free' trial that auto-converts to a yearly charge. For a business buyer this is a stop sign, I cannot put this through accounts.",
+      "Nothing says who owns the household data (tenant names, emails, what they eat, receipts with prices) once a landlord or agent creates the house. Privacy page speaks only to individuals."
+    ],
+    "friction": [
+      "Prices in dollars and 'excluding local taxes' for a UK buyer. Do I pay VAT on top, is it invoiceable in sterling?",
+      "Headline price of $3.99 a month is really $47.88 charged once a year; the real monthly price of $5.99 is hidden in a FAQ.",
+      "Member caps of 1, 5 and 10 do not match a student let: a house is often 4 to 8 people and tenants change every July.",
+      "Starter plan is one member only, so I cannot even try the shared part for free.",
+      "'Get the app' in the top bar, but the app is not out on either phone platform and there is no link to the web version.",
+      "Sign-up consent line mentions Terms but there is no Terms page; only a privacy link.",
+      "Product tour video is 'coming soon', so there is nothing to show a landlord."
+    ]
+  },
+  "works": [
+    "Pricing table is easy to read at a glance on desktop and the three plans are clearly different.",
+    "The sample screen of a flat's pantry shows who added what, which is the exact thing I need to settle 'who left the milk' complaints.",
+    "Privacy page is short, in plain words, and admits the partner data sharing instead of hiding it.",
+    "Trial reassurance sentence on sign-up ('You won't be charged today') states the plan and the yearly amount in the same place."
+  ],
+  "fails": [
+    "Does not speak to anyone who manages houses rather than lives in them.",
+    "Pricing page has no business, multi-house or agent tier and no 'talk to us' route.",
+    "Card required up front, with an explanation that is a non-answer.",
+    "The 'Partner offers' feature plus the anonymised-insights line means my tenants' shopping is a product. I would have to explain that to a landlord and to tenants.",
+    "Everyone in the house sees everything: no way to see only what I need as manager without being a tenant."
+  ],
+  "missing": [
+    "A landlord or letting agent plan: one login, many houses, billed to the property owner, invoice in sterling with VAT stated.",
+    "A statement of who the data controller is when a landlord or agent sets up a house, and a data processing agreement.",
+    "What happens to a house's pantry history and tenant emails at the end of a tenancy or when I stop paying.",
+    "A manager role that gets complaints and waste figures per house without being a household member.",
+    "A sales contact route: only a generic hello@ address."
+  ],
+  "said": [
+    "It's a nice little app for flatmates, I'll give it that. But I don't live in these houses. I've got forty of them and I need one login, forty houses, one invoice to the landlord. Where's that?",
+    "Dollars? We're in Nottingham. And 'excluding local taxes', so is that VAT on top or not?",
+    "'$3.99 a month' and then you read the star and it's forty-eight quid a year taken in one go. And they want the card before I've seen it work. No.",
+    "Why do you need my card for a free trial? 'Keeps it smooth for your household.' That's not an answer, that's a line.",
+    "Up to five members. Half my houses are six or seven. And they turn over every summer, so who sets all that up again?",
+    "Who owns what the tenants put in there? If a tenant asks me for their data, or I leave the landlord and take the house list with me, what then? Nothing on that page.",
+    "Anonymised shopping data to retail partners. I'm not signing my tenants up to that on a landlord's behalf without a lawyer."
+  ],
+  "unsaid": [
+    "My real problem is deposit deductions: I want evidence that food was left to rot and by whom. This tool shows who added things, which sounds useful, and also sounds like something a tenant could call surveillance. I would never say that to the landlord or in a meeting.",
+    "I like the idea of a tenant-facing app doing the nagging instead of me, and that is tempting enough that I read the privacy page to the end. I would not admit how much I want someone else to be the bad guy about the fridge.",
+    "I would have left at the card field on almost any site. What kept me on the sign-up page was looking for an 'agent' or 'business' option hidden at the bottom. There wasn't one, so I closed the tab without clicking anything and never came back.",
+    "I would forward the pricing page to the one landlord who is always asking about kitchen cleanliness, with no comment, to see whether he bites, and I would be careful not to put my name next to it.",
+    "The 'fictional product for demonstrations' line in the footer made me trust it less than the form did. A page that asks for a card and also says it's a demo is how I would expect a scam to read.",
+    "I am the person who gets blamed when software costs more than expected. A yearly auto-charge sitting under a monthly price is the kind of thing I get an email about in November."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "It is a household app, sold to one household at a time with a card in hand. I would need to buy it per house as a manager or landlord, and nothing here says that is possible or who owns the data if I did.",
+    "what_would_flip": "A plan for property managers with one account over many houses, an invoice billed to the landlord in sterling with VAT stated, no card for a trial, and a plain statement that the data belongs to the household or the landlord with a processing agreement to sign."
+  }
+}

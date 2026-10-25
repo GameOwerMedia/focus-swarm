@@ -1,0 +1,97 @@
+{
+  "id": "general03",
+  "group": "general",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the home page and read it top to bottom as a phone visitor would",
+    "Tapped Pricing from the top menu and read the plan table, the small print under it and all four questions",
+    "Looked at the pricing page at phone width (390 px): only the first plan fits on the screen, the Household column is cut off at the right edge",
+    "Followed Start free, Start 14-day trial and Get the app: all of them go to the same sign-up page",
+    "Read the sign-up page: three-step header, email, password, card number, expiry, CVC, one button, small print about Terms and partner offers",
+    "Followed the Privacy link from the sign-up page and read it",
+    "Checked the stylesheet for text sizes: the annual-billing note is 12 px grey, the sign-up explanation is 14 px grey",
+    "Did not look at a rendered phone view of the sign-up page, only its text and styles; did not submit anything. I would have stopped at the card number box"
+  ],
+  "name": "Marisol Quintero",
+  "age": 41,
+  "role": "home care worker, two jobs",
+  "location": "Houston, Texas, US",
+  "real_person": false,
+  "background": "Feeds a household of five on a tight budget, shops at two stores to chase deals, reads English slowly when tired.",
+  "history": "Lost money to a free trial that renewed annually without warning. Checks every price twice.",
+  "disposition": "skeptical",
+  "first_10s": "Ok, una app para la despensa. Mi casa son cinco, siempre estamos comprando cosas que ya hay. 'Start your free trial' ... free for 14 days, bueno. Pero cuanto despues? No veo precio aqui. Voy a Pricing, y ya se que ahi esta el truco.",
+  "journey": [
+    "Home page: nice idea, the shared list with the family is exactly my problem. The only money words are 'Free for 14 days' in tiny grey letters under the buttons. No price, nothing about a card.",
+    "Pricing on the phone: I see Starter, $0, one member. I am five people, so that is no good for me. Next column is cut off, I see '$3.99/m' and then the screen ends. I have to slide sideways with my thumb to find out the plan I actually need.",
+    "I slide over. Household $3.99 per month with an asterisk. I scroll down for the asterisk: 'Billed annually ($47.88 and $83.88 per year)'. So the real number is $47.88 charged at once, not $3.99. That is in 12 px grey at the bottom, under the table.",
+    "Same small line says the trial 'converts to a paid annual plan unless cancelled before day 14'. That is exactly what happened to me before.",
+    "Questions: I open 'Can I pay monthly?'. Yes, $5.99 a month. So the cheap price is a trick for people who pay the whole year, and the monthly one is hidden in a drop-down.",
+    "I open 'Why do you need my card for the free trial?'. The answer is 'it keeps the trial smooth'. That is not an answer. The email three days before is a promise in a FAQ, not in the sign-up.",
+    "I tap 'Start free' on Starter, thinking I can try without a card. It goes to the same page: 'Start your 14-day free trial', Household plan, card number. There is no free road.",
+    "Sign-up page: it does say 'You won't be charged today. Your Household plan ($47.88/year) starts after the trial unless you cancel.' That is clearer than the pricing page, I give them that. But it is a small grey paragraph above the form, and it never says how I cancel or where.",
+    "Under the button: 'you agree to our Terms and Privacy notice, including partner offers'. Privacy page says they may share shopping information with retail partners. I stop before typing the card."
+  ],
+  "usability": {
+    "score": 38,
+    "completed_main_task": false,
+    "blockers": [
+      "The free Starter plan does not exist as a path: 'Start free' leads to the card-required trial page for the Household plan, so I cannot start without giving a card",
+      "At phone width the plan table is wider than the screen; the Household and Family+ prices and features are off the edge and I only find them by sliding sideways",
+      "The card is demanded but nowhere does it say how to cancel, where, or what happens to my money if I miss day 14"
+    ],
+    "friction": [
+      "$3.99/mo is the headline but the real charge is $47.88 at once; the explanation is a 12 px grey line under the table",
+      "Monthly price ($5.99 and $9.99) is only inside a drop-down question",
+      "'Prices exclude local taxes' means the final total is still unknown",
+      "Home page says 'Free for 14 days' with no price and no card warning",
+      "The reason given for asking for the card is vague",
+      "Everything is English only; words like 'converts', 'billed annually', 'exclude local taxes' take me a second read on a small, cracked screen",
+      "The app is 'iOS soon', so on my iPhone only the web app works, and that is said in one small line"
+    ]
+  },
+  "works": [
+    "The sign-up page states the yearly amount ($47.88) and that nothing is charged today, in the same place where I type the card",
+    "The progress line (Account, Payment, Invite household) tells me how many steps there are",
+    "Sign-up has few fields and the card box asks for numeric keyboard, which is easier with my thumbs",
+    "Pricing page plain headings and short plan names, no jargon about tiers",
+    "The idea itself, one shared list for the whole house, is something I would use"
+  ],
+  "fails": [
+    "Monthly-looking price hides an annual charge",
+    "Free plan advertised on the pricing page but not reachable without a card",
+    "Phone table cut off, price for my family size not visible without a side swipe",
+    "Cancellation instructions absent from the sign-up and the pricing page",
+    "Card asked at the same time as the account, before I see anything of the product",
+    "Partner offers tied into the agreement button at sign-up"
+  ],
+  "missing": [
+    "The total I will pay, with taxes, before I give a card",
+    "How and where to cancel, and a plain promise of the reminder email at sign-up, not in a FAQ",
+    "A way to try without a card",
+    "A refund statement if they charge me the year anyway",
+    "Spanish, or at least simpler English for the money part",
+    "Which plan fits five people, said plainly (Household is 'up to 5 members', which is my house exactly, but I had to find it)"
+  ],
+  "said": [
+    "Pues no. $3.99 al mes, dicen, pero es $47.88 de un solo golpe. Eso no es $3.99.",
+    "Le di a 'Start free' y me pide la tarjeta. Entonces no es free. Es una prueba con tarjeta, que no es lo mismo.",
+    "A mi ya me cobraron un año entero por una prueba gratis. No me vuelve a pasar. Si no me dicen como cancelar, no pongo la tarjeta.",
+    "The table, I cannot even see the whole thing on my phone. Why is the price I need cut off?",
+    "Mandame el link cuando tengas la prueba sin tarjeta, ahi si la miro."
+  ],
+  "unsaid": [
+    "I scrolled to the small print first, before I read what the app does. That is what the last company taught me, and the small print is where the number was.",
+    "I felt a little stupid for a second when I could not find the Household price, as if my phone or my English was the problem. It was just a table too wide for the screen. I would not tell anyone that.",
+    "If I were alone I might still type the card, because the idea is good and I am tired. Then I would put a reminder in my phone for day 12, and probably forget it, and that is exactly what they are counting on.",
+    "'It keeps the trial smooth for your whole household' sounded like someone talking down to me. I did not argue, I just closed that drop-down.",
+    "I would not tell my sister about this app. I would send her a screenshot of the pricing note with no message, and she would understand.",
+    "Probably I leave the tab open on the pricing page and never come back. The silent bounce is the honest answer here."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "The headline price is a monthly figure for a yearly charge, the free plan secretly needs a card, and nowhere does it say how to cancel. For someone already burned by a renewing trial, that is the same pattern, so I do not give them the card.",
+    "what_would_flip": "A try-it option without a card, or at least the yearly total and the cancel steps shown in normal-size text right next to the card box, and the price table readable on my phone without sliding sideways."
+  }
+}

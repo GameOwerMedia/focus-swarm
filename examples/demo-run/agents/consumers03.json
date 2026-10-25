@@ -1,0 +1,115 @@
+{
+  "id": "consumers03",
+  "group": "consumers",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the landing page and read it top to bottom, including the small print under the hero buttons and the footer",
+    "Opened /pricing and read the plan table, the asterisk footnote and all four FAQ answers",
+    "Looked at the pricing page at phone width (390 px) and saw how much of the table fits on screen",
+    "Opened /signup and read every field, the step line, the text above the form and the consent line under the button",
+    "Opened /privacy and read the whole page",
+    "Read the page styling to judge text contrast, what the navigation does on a narrow screen and how wide the pricing table is",
+    "Checked where the 'Start free' button on the free plan leads, and where the Family+ trial button leads",
+    "Looked for a phone-width picture of the sign-up page and found none, so I judged it from its markup and styling: one column, about 350 px wide, card number and expiry/CVC fields stacked in a plain form",
+    "Did not submit anything. I would have typed a throwaway email and then stopped at the card number field"
+  ],
+  "name": "Linh Tran",
+  "age": 45,
+  "role": "Accountant, buys groceries for her elderly parents",
+  "location": "San Jose, California, US",
+  "real_person": false,
+  "background": "Does the shopping for her parents, who live 20 minutes away. Worries about expired food in their fridge. Reads every footnote, uses loyalty apps for the discounts but declines every data-sharing option offered.",
+  "disposition": "skeptical",
+  "first_10s": "Okay, 'know what's in the fridge before you shop' - that is literally my problem with Mom and Dad's fridge. Expiry nudges, good. 'Free for 14 days.' Free how, what's the catch. Small grey text under the buttons - hard to read, always the small grey text that matters. Scroll. 'Partner offers... based on your pantry.' Hm. Based on my pantry. No.",
+  "journey": [
+    "Landed on the home page. The idea fits my situation: a shared list of what is in a fridge plus expiry alerts. The example screen shows flatmates, not a daughter and two parents, but I can map it onto us.",
+    "Read the feature cards. 'Partner offers: discounts from our retail partners... based on your pantry.' That is my pantry data, or my parents' pantry data, feeding an ad business. Already cooling.",
+    "Went to Pricing. Table shows $3.99 and $6.99 per month. Footnote says billed annually, $47.88 and $83.88, and the trial converts to a paid annual plan. So the headline is a monthly price for a yearly charge. FAQ says monthly is $5.99 and $9.99, which is $71.88 a year for the same plan. The $3.99 only exists if I hand over 48 dollars in one go.",
+    "At phone width the table is cut off. I see Starter and half of Household, the price reads '$3.99/m' and the button says 'Start 14-day'. Nothing tells me to swipe sideways. Family+ and its price are off screen entirely.",
+    "Opened the FAQ about why a card is needed. Answer: 'It keeps the trial smooth for your whole household.' That is not an answer. It also says one email three days before the trial ends.",
+    "Pressed 'Start free' on the $0 plan, expecting no card. It goes to the same sign-up page as the paid trial.",
+    "Sign-up page: three steps listed (Account, Payment, Invite household) but it is all one form. Email, password, card number, expiry, CVC. Text says I won't be charged today and the Household plan at $47.88 a year starts after the trial. No plan choice, annual is already picked for me. No cancel instructions anywhere on the page.",
+    "Under the button: 'By continuing you agree to our Terms and Privacy notice, including partner offers.' Partner offers are inside the agreement. Not a separate box I can leave unticked. There is no Terms link, just the word.",
+    "Went to the Privacy page. They may share 'anonymised and aggregated shopping insights' with retail and brand partners. No partner names, no opt-out, nothing about California rights. Deleting my data means emailing a placeholder address and waiting up to 30 days.",
+    "Stopped at the card number field. Closed it."
+  ],
+  "usability": {
+    "score": 55,
+    "completed_main_task": false,
+    "blockers": [
+      "The card is required even for a trial, and the sign-up page has no way to refuse partner offers: the consent to them is part of the sign-up line. For me that ends it before the card field.",
+      "The free $0 Starter plan sends me to the same card-required form, so I cannot find any way to try the product without a card."
+    ],
+    "friction": [
+      "At 390 px the pricing table is a 760 px-wide block you have to scroll sideways. Only Starter and half of Household show, and nothing hints at scrolling. Family+ is invisible.",
+      "On a phone the top menu drops Features, Pricing and Privacy. Only the green button is left. On the sign-up page there is not even that, and the footer there has no Privacy link, so the only way to the privacy notice is a link in the small grey text under the button.",
+      "Price shown per month but charged per year. Monthly price quoted in the FAQ is a different number.",
+      "The page does not say 'card required' on the home page or in the pricing table, only in the FAQ and then the form.",
+      "Small grey text (about 2.5:1 contrast on white) is used for the free-trial line, the pricing footnote, the 'Shared with' lines and the form note. Exactly the text I need to read is the hardest to read on a tablet.",
+      "Family+ trial button leads to a form that says Household plan, $47.88 a year. I could not choose the plan I was clicking on.",
+      "The 'Invite your household' step is listed but I never see how my parents would join. They would need accounts, emails and probably a phone app, and the app is 'iOS soon, Android later this year'.",
+      "A video that says 'coming soon' and a quote from an unnamed 'beta household'."
+    ]
+  },
+  "works": [
+    "The home page says clearly what the app does, in a sentence a person can follow.",
+    "The pricing plans are laid out in a table where the difference between plans is easy to compare on a desktop or laptop.",
+    "The sign-up form is short and the card fields are numeric and sensibly labelled.",
+    "The privacy page is short and written in plain words. It states the 30-day receipt image retention, which is more than most do.",
+    "The sign-up page says 'You won't be charged today' near the top, which is the right place for it."
+  ],
+  "fails": [
+    "The trial is called 'free' in the hero and the card requirement is not mentioned until the FAQ and the form.",
+    "The headline monthly price is only valid with annual billing. The real monthly price is $5.99, 50% higher.",
+    "Consent to partner offers is bundled into the sign-up agreement with no separate choice.",
+    "'Partner offers' are described as 'based on your pantry' while the privacy page talks only of 'anonymised and aggregated' sharing. The two descriptions do not obviously match.",
+    "Cancelling is never explained: no how, no where, no refund policy.",
+    "The card question in the FAQ is answered with marketing, not a reason.",
+    "No Terms page behind the word Terms."
+  ],
+  "missing": [
+    "How to cancel and how to get a refund, in one visible place",
+    "A free path with no card, even a limited one",
+    "A separate, unticked choice for partner offers, and a way to switch off any sharing",
+    "Names of the retail and brand partners, and what is shared about what",
+    "Anything about California privacy rights, or a delete button instead of an email to a placeholder address",
+    "A way to add an older relative who does not use apps. Who can see what in a household when the household is my parents and me?",
+    "An Android app date I can rely on. 'Later this year' is no date. 'Web app works today' but no link to it",
+    "A phone-friendly pricing view",
+    "An explanation of what happens to my parents' data if I cancel"
+  ],
+  "said": [
+    "Free trial with a credit card is not a free trial. It is a subscription with a 14-day delay.",
+    "$3.99 a month? No it isn't. It's $47.88 up front, or $5.99 if I want to pay monthly. Say that on the front page.",
+    "They put 'including partner offers' inside the I-agree sentence. So I can't say yes to the app and no to the ads. That's the whole ballgame for me.",
+    "'Based on your pantry.' Based on my parents' pantry, you mean. Their groceries are not a sales lead.",
+    "I tried the phone, and the pricing table cuts off at 'Start 14-day'. Where's the rest? I'd never find Family+ unless I knew to swipe.",
+    "Why does a $0 plan need a card number? I clicked 'Start free' and got the same form.",
+    "The FAQ says the card 'keeps the trial smooth for your household.' Smooth for who?",
+    "Idea's good. My dad throws out yoghurt every week. But I'd rather keep a spreadsheet and a Sunday phone call than give a stranger my card and my parents' kitchen.",
+    "Rồi, thôi. (Okay, forget it.) I'll keep my own notes."
+  ],
+  "unsaid": [
+    "The product is solving a worry I do actually have, and that makes it worse: I wanted to like it for the first minute and the annual-price footnote killed that. I feel a bit played when the headline number is not the real one.",
+    "I did the arithmetic in my head and checked the monthly figure in the FAQ because I assume a footnote hides something. It did. So now I'm reading the rest of the page as an adversary, which is not a good state to be in at the sign-up form.",
+    "Thinking about my parents: my mother gets confused by apps and would never manage a card trial that quietly turns into $47.88. If I put them into this and forgot to cancel on day 14, I would be the one who did it to them. I trust myself to remember, but I would not bet on it with a 'three days before' email I might miss in a busy tax week.",
+    "I would not tell my parents their grocery receipts go to anyone, even 'anonymised'. I'd lie by omission. That is a sign I should not sign up.",
+    "I did not reach the card field and I would not come back. Nothing on the site makes me feel the company wants me back. The tab would stay open for a day, then I would close it without a note or any email to hello@example.com. Silent bounce.",
+    "I would screenshot the 'including partner offers' line and send it to my brother with no comment. He would know what I mean.",
+    "The 'Android later this year' line makes me think they will not bother with the people I'm shopping for. Dad's tablet is an old Android one."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "A card is demanded before I can try anything, the price in big letters is not what I would pay by the month, and I cannot say no to partner offers without refusing the whole sign-up. For someone who declines every data-sharing option, that is decided at the consent line.",
+    "what_would_flip": "A trial or free plan that works without a card, a monthly price that is the real monthly price, partner offers as a separate unticked choice that can be switched off later, named partners, a visible cancel button, and some way to add my parents who will not use a phone app."
+  },
+  "extra": [
+    { "key": "would_pay", "label": "Would pay", "type": "bool", "value": false },
+    { "key": "price_point", "label": "Price I would call fair", "type": "text", "value": "Around $3 a month, billed monthly, with no partner data sharing at all. I would think $4 to $5 a month is okay for a version I can use for my parents without a card to start. At the price shown on the page I would have to see the product work first." },
+    { "key": "walk_away_price", "label": "Walk-away price", "type": "text", "value": "$47.88 charged in one go, behind a card, on the strength of a trial I cannot try without handing the card over. Or $5.99 a month with partner offers bundled in. Either one: no." },
+    { "key": "alternative", "label": "What I would buy instead", "type": "text", "value": "Nothing paid. A shared spreadsheet or shared notes list with my parents' items and dates, a weekly visit and a phone call, and the supermarket loyalty app I already use with sharing switched off." },
+    { "key": "trigger", "label": "What would trigger the purchase", "type": "text", "value": "A no-card trial or free plan I could actually put my parents' real fridge into for two weeks, plus a written promise that nothing from the pantry is shared or sold, plus a one-click cancel. A named person or review from someone who looks after their parents, not a flat of students." },
+    { "key": "barrier", "label": "What stops me", "type": "text", "value": "Card up front, annual billing hidden behind a monthly price, partner offers tied to the agreement with no way to refuse, no explanation of cancelling, and no clear way to include parents who are not tech people. Also an Android app that does not exist yet." }
+  ]
+}

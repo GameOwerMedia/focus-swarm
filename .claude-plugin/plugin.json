@@ -1,0 +1,13 @@
+{
+  "name": "focus-swarm",
+  "version": "0.1.0",
+  "description": "One agent per persona: a cast you pick visits your live product, repo or document on its own and files a structured report, rendered as an offline HTML board with a synthesis and raw JSON.",
+  "author": {
+    "name": "OverJK",
+    "url": "https://github.com/GameOwerMedia"
+  },
+  "homepage": "https://github.com/GameOwerMedia/focus-swarm",
+  "repository": "https://github.com/GameOwerMedia/focus-swarm",
+  "license": "MIT",
+  "keywords": ["focus-group", "personas", "user-research", "multi-agent", "subagents", "product-review", "usability"]
+}

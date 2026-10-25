@@ -1,0 +1,23 @@
+{
+  "name": "focus-swarm",
+  "owner": {
+    "name": "OverJK",
+    "url": "https://github.com/GameOwerMedia"
+  },
+  "metadata": {
+    "description": "focus-swarm: a swarm of independent persona agents that visit your product.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "focus-swarm",
+      "source": "./",
+      "description": "One agent per persona: a cast you pick visits your live product, repo or document on its own and files a structured report, rendered as an offline HTML board with a synthesis and raw JSON.",
+      "version": "0.1.0",
+      "author": { "name": "OverJK" },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["focus-group", "personas", "user-research", "multi-agent", "subagents", "product-review", "usability"]
+    }
+  ]
+}

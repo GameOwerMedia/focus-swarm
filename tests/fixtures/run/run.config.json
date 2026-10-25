@@ -1,0 +1,12 @@
+{
+  "target": "https://example.com/",
+  "target_type": "live",
+  "product": "Acme Notes",
+  "date": "2026-01-15",
+  "lang": "en",
+  "panels": { "general": 1, "consumers": 1, "capital": 1 },
+  "panel_order": ["general", "consumers", "capital"],
+  "real_people": [],
+  "notes": "Check the sign-up flow on a phone.",
+  "mode": "custom"
+}

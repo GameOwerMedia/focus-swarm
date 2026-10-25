@@ -1,0 +1,122 @@
+{
+  "id": "commercial01",
+  "group": "commercial",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the landing page and read it top to bottom: hero, six feature blurbs, the beta quote, the empty video slot",
+    "Opened the pricing page and read the plan table, the small print under it and all four FAQ answers",
+    "Looked at the pricing page at phone width (390 px) and checked how the plan table behaves there",
+    "Opened the sign-up page and read every field, the step line, the copy above the form and the consent line",
+    "Opened the privacy page and read the list on partner offers and household visibility",
+    "Read the stylesheet to judge the phone layout of the plan table and the form field sizes",
+    "Did not submit the form. I would have typed a work email and stopped at the card number field"
+  ],
+  "name": "Priya Raman",
+  "age": 34,
+  "role": "Operations lead, small meal-prep company",
+  "location": "Bristol, UK",
+  "real_person": false,
+  "background": "Runs stock for a 12-person kitchen delivering 600 meals a week. Inventory lives in a shared Google Sheet with expiry colour rules. Her director signs off spend over a few hundred pounds a year.",
+  "history": "Has been burned by software that was built for something else and bent to fit. Wants less waste without a big system.",
+  "disposition": "interested",
+  "first_10s": "Fridge, shared list, expiry nudges... ok that's basically my sheet with a nicer face. 'Flat 3B pantry, shared with Sam, Priya and Jo.' Ha, a Priya. It's a flat-share app though. Scroll. Barcode scan, expiry push, waste report. Waste report is the thing I'd actually show Daniel. Pricing next, and I want to see if there's anything above 'Family+' for a proper kitchen.",
+  "journey": [
+    "Landed on the home page. Hero is clearly about households and flatmates. Small print says iOS 'soon', Android later, web app works today. I'd want it on my iPhone in the kitchen, so that's a yellow flag already.",
+    "Read the features. Expiry nudges and waste report are what I care about. Nothing about batches, use-by versus best-before, suppliers, or what's allowed to be eaten from what. 'Partner offers based on your pantry' made me wince for a business.",
+    "Went to Pricing. Three plans, top end is 'Family+', up to 10 members. My kitchen is 12 people. There is no fourth column and no 'contact us'.",
+    "Pricing headline is $3.99 a month, but it's billed annually: $47.88 for Household, $83.88 for Family+. Monthly is $5.99 / $9.99, which is only mentioned inside an FAQ. Also dollars, and 'excludes local taxes' so I'd be paying VAT on top.",
+    "On the phone the plan table is wider than the screen. I could see Starter, half of Household and nothing of Family+. No arrow, no hint to swipe. The 'Start 14-day trial' button on Household is cut off mid-word.",
+    "Opened the FAQ on the card. The answer is 'it keeps the trial smooth for your whole household' and that they'll email three days before it ends. That is not an answer. Nothing about how to cancel except 'Settings, Billing' in the app, which I don't have yet.",
+    "Went to sign-up. One long form: email, a 12-character password, card number, expiry, CVC. The steps line shows 'Account > Payment > Invite your household' but it's all on one screen. The page says Household plan, $47.88/year, starts after the trial. I wasn't asked which plan.",
+    "Household caps at 5 members and I'd be signed up for that one by default. The trial auto-converts to a full year, not a month.",
+    "Checked privacy. Anonymised shopping insights shared with retail and brand partners, and everyone in the household sees everything and who added it. Receipt images kept 30 days. Deleting my data means emailing hello@example.com.",
+    "Stopped at the card number field. Closed it."
+  ],
+  "usability": {
+    "score": 35,
+    "completed_main_task": false,
+    "blockers": [
+      "Biggest plan is 10 members and my kitchen is 12. There is no plan or contact route for a commercial kitchen",
+      "On a phone the Family+ column is off-screen with no scroll cue, so the one plan that nearly fits cannot be seen without guessing to swipe",
+      "No way to trial it without handing over a card, and the sign-up silently picks Household (5 members) for me",
+      "iPhone app is 'soon'; the only thing I could actually use in the kitchen is a web app that the site barely describes"
+    ],
+    "friction": [
+      "Prices in dollars for a UK buyer, ex-tax, with the cheap-looking monthly figure being an annual-billed one",
+      "Real monthly prices ($5.99, $9.99) are hidden in an FAQ drawer",
+      "The 'why do you need my card' answer dodges the question",
+      "Sign-up shows three steps but is one page; I can't tell what 'Invite your household' will ask for",
+      "Form field text is 15 px, which makes iPhone Safari zoom in on tap, and a 12-character password with no password manager hint",
+      "The cancel route is not stated on the sign-up page, only 'cancel before day 14' with no how",
+      "Consent line bundles Terms, privacy and partner offers in one 'by continuing'"
+    ]
+  },
+  "works": [
+    "Expiry nudges and a waste report are exactly the features I'd show my director",
+    "The headline price of about $48 a year is well under what Daniel needs to sign off, so I could expense it myself and not ask",
+    "'You won't be charged today' and the email three days before the end of the trial are stated plainly on the sign-up page",
+    "Privacy page is short and readable, with a clear note on who can see what in a household",
+    "Web app works today, so there is something to try on a laptop"
+  ],
+  "fails": [
+    "It is built for flatshares. Family+ is 'big, busy kitchens' in the pricing copy, but 10 people at home is not a commercial kitchen",
+    "Everyone sees everything. No roles, no read-only for a casual kitchen hand, no audit trail I could show an inspector",
+    "Nothing on batch or lot numbers, use-by versus best-before, supplier delivery notes or allergen tracking",
+    "Receipt scanning is for supermarket receipts, not supplier invoices",
+    "Partner offers and anonymised shopping data going to retail brands is a non-starter when the pantry is my company's purchasing",
+    "Phone pricing table cuts off the plans; the 600-meals-a-week buyer is on a MacBook then an iPhone and would hit this",
+    "The video slot says 'coming soon', so there is no demo of the one thing I would use"
+  ],
+  "missing": [
+    "A plan or contact route for teams above 10",
+    "Business or commercial use stated anywhere, or a line on whether it's allowed",
+    "Roles and permissions",
+    "Export to CSV or Google Sheets so I can leave without losing my data",
+    "Sterling pricing, VAT-inclusive figure and a VAT invoice for the company",
+    "A trial without a card",
+    "An actual way to cancel, written down before I pay",
+    "Anything that tells me if the iPhone version exists yet"
+  ],
+  "said": [
+    "It's a nice little app, but it's a flat-share app. Family+ stops at 10 people and I've got 12 on the rota. I'd be paying for a plan that doesn't fit.",
+    "$47.88 a year is nothing, I wouldn't even need to ask Daniel. But I'm not putting the kitchen's stock data into something that tells me it shares shopping insights with retail partners.",
+    "Why does a free trial need my card? 'Keeps it smooth for your household' is not an answer. Just say it auto-renews for a year.",
+    "I opened pricing on my phone and I could only see half of it. Where's the third plan?",
+    "Can I export it to a sheet? If I can't get my data out, I'm not putting it in.",
+    "If they had a team plan with roles and a proper batch field I'd try it tomorrow. As it stands it's a nicer-looking version of what I already have, and mine's free."
+  ],
+  "unsaid": [
+    "I'd have closed the tab at the 760 px wide pricing table on my phone if I'd been standing in the kitchen with wet hands. I would not have scrolled sideways to look for a third plan, and I would never tell the company that was why.",
+    "The $3.99 looks like a monthly price and then the small print says it's $47.88 up front for a year. That makes me think the page is set up to show me the small number first. I trust it less for it, and I would not say 'it feels sneaky' to a vendor.",
+    "I'd keep the card number field open in my head as the point I leave. I don't mind $48. I mind that the plan I'm signed up to defaults to a year and that I'm the one who'd have to remember day 11.",
+    "The truth is, my sheet works. It's ugly and Hannah breaks the conditional formatting every month, but it's mine. The only real reason to switch is the waste report, and I'm not sure I believe it, since 'most households save more than the subscription' is not a number for a kitchen throwing out 600 meals' worth of stock.",
+    "Reading 'Dijon mustard x3, stop!' in the hero made me smile and think 'cute', and that is exactly the problem: it reads as a toy. If I forward this to Daniel with no comment he'll assume I've gone domestic.",
+    "I'd leave the tab open and not come back. If I spoke to anyone it would be one line to Hannah: 'there's an app, it's for flats, ignore'.",
+    "I did not want to read the privacy page and then see 'email us to delete your account within 30 days', because it means I'd have to remember, and I'd never get round to it."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "It is a household app and the pricing page confirms it: the top plan stops at 10 people, my kitchen has 12, there are no roles, no batch tracking and no export, and the privacy page says shopping data goes to retail partners. The price is fine. The fit and the trust are not.",
+    "what_would_flip": "A team plan for 12 or more with roles and an off switch for partner data sharing, a CSV or Sheets export, a trial that doesn't need a card, and prices in pounds with VAT shown. Any one of those alone would not do it; the first and the data sharing together would get me to try it."
+  },
+  "extra": [
+    {
+      "key": "director_pitch",
+      "label": "Could she justify it to her director?",
+      "type": "text",
+      "value": "On price, yes: about $48 a year is below the level that needs sign-off. On fit, no: she could not describe it to him as a kitchen tool, because the site never says it is one, and the privacy page would be the first thing he asked about."
+    },
+    {
+      "key": "phone_signup",
+      "label": "Phone sign-up path",
+      "type": "list",
+      "value": [
+        "Pricing table is 760 px minimum, so on a 390 px phone it scrolls sideways with no hint and Family+ is out of view",
+        "Sign-up is a single column form and fits, but its fields are 15 px, so iPhone Safari will zoom in on focus",
+        "Card entry is a plain text field with no wallet pay option mentioned",
+        "The form is one page though the step line lists three steps"
+      ]
+    }
+  ]
+}

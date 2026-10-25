@@ -1,0 +1,161 @@
+{
+  "id": "regulators02",
+  "group": "regulators",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "opened the landing page and read it top to bottom, including the small print under the main button",
+    "opened /pricing at laptop width and again at phone width (390 px), read the plan table, the asterisk note and all four FAQ answers",
+    "opened /signup at laptop width and read the form, the step line and the consent sentence under the button; checked the page's style rules to work out what a 390 px phone would show, because no phone capture of the sign-up page was available to me",
+    "opened /privacy and read it as a complaints handler would, line by line",
+    "followed every pricing and sign-up link from the landing page, the pricing table (all three plan buttons) and the header; compared the figures across pages",
+    "filled nothing in; stopped at the card number field and described what I would and would not type"
+  ],
+  "name": "Gareth Pryce",
+  "age": 52,
+  "role": "Consumer law specialist",
+  "org": "Private practice, subscription traps and drip pricing",
+  "location": "Cardiff, UK",
+  "real_person": false,
+  "background": "A decade at a consumer advice body, now in private practice. Spends his days reading the pricing pages of companies his clients have complained about.",
+  "disposition": "skeptical",
+  "first_10s": "Free for 14 days. Right. Free for 14 days with what attached. Button says 'Start your free trial', small print says 'Free for 14 days' and nothing about a card. Pound or dollar? Dollar. I am in Cardiff and it is going to ask me for a UK receipt. Fine. Straight to Pricing, before I look at anything else.",
+  "journey": [
+    "Landing page: CTA 'Start your free trial' and the line 'Free for 14 days'. No mention of a card, no mention that it rolls into a paid plan. The only hint of money anywhere on that page is the waste report claiming households 'save more than the subscription'.",
+    "'Get the app' in the header goes to a sign-up form, but the same line says iOS is 'soon' and Android 'later this year'. So 'Get the app' is not getting an app.",
+    "Pricing, laptop: $0, $3.99/mo*, $6.99/mo*. The asterisk sends me to a 12 px light grey note under the table: billed annually, $47.88 and $83.88 a year, ex taxes, 'Trial converts to a paid annual plan unless cancelled before day 14'.",
+    "FAQ: monthly is $5.99 and $9.99. So the headline price is the annual-commitment price, 33 to 40 per cent below what a monthly payer is charged, and that fact lives inside a closed accordion, not the table.",
+    "FAQ 'Why do you need my card for the free trial?': 'It keeps the trial smooth for your whole household.' That is not a reason, it is a sentence. They promise one email three days before the trial ends; that promise is in the FAQ, not on the sign-up form.",
+    "Pricing, phone width: the table is forced to 760 px wide inside a scrolling box. At 390 px I see the Starter column and the left edge of Household; the '/mo*' on the price is cut off and so is the 'Start 14-day trial' button. The asterisk note sits underneath, tiny and pale. A phone visitor can read '$3.99' with no sign of 'per month, billed once a year' unless they find the note.",
+    "Sign-up: three-step line says '1. Account > 2. Payment > 3. Invite your household' but it is one page with email, password and card all at once. Heading 'Start your 14-day free trial', then 'You won't be charged today. Your Household plan ($47.88/year) starts after the trial unless you cancel.' That is better than the pricing page, I will give them that. It names an annual figure on the form itself.",
+    "I came in from the Family+ and the Starter buttons too. Every route lands on the identical form, locked to Household at $47.88/year. 'Start free' on the $0 plan also asks for a card. I could not find any way to take the $0 tier without a card.",
+    "Under the button: 'By continuing you agree to our Terms and Privacy notice, including partner offers.' 'Terms' is not a link, and no terms page exists on the site. Partner offers are bundled into the same agreement as the contract.",
+    "Privacy: partner data sharing described as 'anonymised and aggregated shopping insights'. No named controller, address, lawful basis, retention period beyond receipts, regulator, or complaint route. Deletion by email, within 30 days.",
+    "I stopped at the card number field. I would not type a card into this form."
+  ],
+  "usability": {
+    "score": 55,
+    "completed_main_task": false,
+    "blockers": [
+      "On a phone the Household plan, the plan most visitors will pick, is cropped out of the pricing table: the 'per month' suffix and the trial button are off-screen, so the visitor cannot see price and billing period together without finding a sideways scroll",
+      "The $0 Starter plan has no card-free route: its button leads to the same card form, locked to the paid Household plan",
+      "No terms page exists, so 'I agree to the Terms' is an agreement to a document I cannot read"
+    ],
+    "friction": [
+      "Headline price is the annual-commitment price expressed monthly; the monthly price is only in a closed FAQ",
+      "The condition that makes the trial convert to a paid annual plan is a 12 px light-grey footnote",
+      "Light grey (#9aa59f on white, roughly 2.5:1) is used for the pricing footnote, the sign-up explanation and the consent line, which are exactly the sentences a buyer needs",
+      "Sign-up's three-step line shows 'Payment' as step 2 but account and card are one page",
+      "On a phone the sign-up page has no navigation at all: the style rules hide every header link under 760 px, and this page has no button in the header to survive that, so there is no way to the pricing page except the logo and the browser back button",
+      "The sign-up form says Household whichever plan was clicked, so someone who clicked Family+ is shown the wrong price",
+      "'Get the app' leads to a sign-up form while the app is not available",
+      "Prices in dollars and 'exclude local taxes' for a UK-facing receipt feature"
+    ]
+  },
+  "works": [
+    "The sign-up page says 'You won't be charged today' and names the annual figure ($47.88/year) next to the button; many do not",
+    "The card fields are plain inputs with sensible numeric and autocomplete hints, and the form fits a 390 px viewport (single column, 460 px maximum width)",
+    "The pricing footnote does say 'converts to a paid annual plan unless cancelled before day 14' in words, not code",
+    "Receipt image retention (30 days) is stated, which is more than most do"
+  ],
+  "fails": [
+    "'Free for 14 days' and 'Start your free trial' on the landing page with no word that a card is required",
+    "The pricing table price is not the price a monthly payer pays; the $5.99 and $9.99 monthly prices are in an accordion",
+    "'Cancelled before day 14': does the charge come on day 14 or day 15? And cancel where, how? The only place Settings, Billing is mentioned is to switch to monthly",
+    "No description of how to cancel anywhere on the site, and no cancellation as easy as sign-up commitment",
+    "Prices ex tax, in dollars, when the receipt scanning promises UK supermarket support",
+    "'Terms' is plain text, no terms page; the consent line bundles partner offers into contract acceptance",
+    "The FAQ's three-day reminder email is a promise on a help page, not a commitment on the form and not in any terms",
+    "Testimonial from 'a beta household of four' with no name, and the waste-report line 'Most households save more than the subscription' with no basis stated",
+    "Privacy page: no controller identity, no address, no lawful basis, no regulator, no data-sharing recipients named; sharing 'anonymised' shopping data derived from receipts that include prices and store"
+  ],
+  "missing": [
+    "A statement of the card requirement before the sign-up form",
+    "The monthly price in the pricing table next to the annual one",
+    "The date the first charge will be taken, in the form, in days and in dollars",
+    "A cancellation route and how long it takes, shown before the card number is entered",
+    "A terms page, a company number and a registered address",
+    "A tick box for partner offers that is separate from the contract and unticked",
+    "A card-free route to the $0 plan",
+    "Prices including tax in the currency of the customer"
+  ],
+  "said": [
+    "Free for fourteen days, with your card. It says that in a grey twelve-point footnote, at the bottom of a table you have to scroll sideways to read on your phone. I would not call that free, I would call it a subscription with a delay.",
+    "Three ninety-nine a month. Except it isn't. It's forty-seven eighty-eight, once, in a year. If you want to pay monthly it's five ninety-nine. That is the real price and it's inside a dropdown.",
+    "'Keeps the trial smooth for your whole household.' That's not an answer. Why do you need the card? Because card-required trials convert far better than ones without. Say that.",
+    "The sign-up page is the best thing on the site, to be fair: 'You won't be charged today', annual amount stated. But I got there from three different buttons and it told me Household every time. I pressed the Family+ one and it still said forty-seven eighty-eight.",
+    "'Terms.' Where? There's no link. I'm being asked to agree to a document that doesn't exist, 'including partner offers'. Offers are a marketing choice, not a condition of the contract.",
+    "No cancel instructions anywhere. Not on pricing, not on the form. 'Unless you cancel': fine, how?",
+    "Quick one on tax. Dollars, ex tax, UK retailers' receipts. If a UK consumer is the target, I want a tax-inclusive price on the first thing they see.",
+    "Privacy page says 'anonymised and aggregated' about shopping data from my receipts and then the feature list says offers 'based on your pantry'. That's not aggregated. That's me."
+  ],
+  "unsaid": [
+    "My first reaction was professional pleasure: it is textbook, a card-required trial rolling into an annual plan with the condition tucked into a footnote, and the monthly price held back in an FAQ. If a client came to me with this I would know exactly which paragraph to quote. That is why I kept scrolling instead of closing the tab.",
+    "I only believed the 'you won't be charged today' line was a decent effort until I realised it is the only place the real money is stated. It earned a little respect and then lost it, because the same sentence is hidden from anyone who came in through the pricing page.",
+    "The phone view is what I would screenshot and send to a colleague with no comment. Starter fully visible, Household sliced in half at the price, button gone off the edge. I would not explain it, they would see it.",
+    "I would never admit this on a panel, but the design is competent. Clean, friendly, a nice mustard joke. That makes me more suspicious, not less: the care went into the page, and the money terms were left in a colour chosen so you cannot read them.",
+    "I did not type a card. I did not even tap into the card field, and I would not on a phone on a bus either. My behaviour says it: I would close the tab and put 'Larder, annual rollover, card up front' in a note for the next complaints clinic.",
+    "The 'Start free' button for $0 going to a card form is the one I would get angry about, privately. It suggests the free tier is a lure for card capture, but I cannot prove that from outside, so I would not say it.",
+    "I am unsure whether any of this is unlawful or merely ugly. Day 14 vs day 15, taxes, a cooling-off right, consent for partner offers: the arrangement is borderline in several places, and borderline is what I get paid to spot. The company is 'fictional' so I cannot prove anything about the real checkout."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "I would not enter a card. The offer is called free but is a card-captured annual subscription, the true monthly price and the conversion condition are in the least visible places, the plan buttons all lead to a Household-only form, and there is no terms page or cancellation route to rely on.",
+    "what_would_flip": "A plain statement before the form, in normal-contrast type, that a card is required and what will be charged and when; monthly and annual prices side by side including tax; a cancellation route shown before the card field; a terms page; partner offers moved to a separate unticked box; a card-free $0 route; and a pricing table that shows the Household plan fully on a phone."
+  },
+  "extra": [
+    {
+      "key": "legal_basis",
+      "label": "Legal basis",
+      "type": "text",
+      "value": "Cannot be answered from the site alone. The privacy page names no controller, no lawful basis and no regulator. Consent is bundled into acceptance of unseen Terms, which would not be freely given consent for marketing or data sharing. For the subscription itself the likely basis is contract, but the contract document is not published. I would need the Terms, the checkout flow after card entry, and the company registration details."
+    },
+    {
+      "key": "data_flows",
+      "label": "Questionable data flows",
+      "type": "list",
+      "value": [
+        "Receipt data (store, date, items, prices) shared as 'anonymised and aggregated insights' with retail and brand partners, while the product promises offers 'based on your pantry'; the gap between aggregate and personal is not explained",
+        "Household members' names and emails collected from third parties who have not themselves agreed to anything, visible to every member",
+        "Partner offers consent bundled into the contract sentence under the sign-up button",
+        "Receipt images kept for 30 days to 'improve recognition', which is training on customer data, with no opt-out stated",
+        "Deletion only by email, to a placeholder address, with a 30-day wait; no mention of a data export or of who the controller is",
+        "'Basic usage analytics' collected with no recipient named"
+      ]
+    },
+    {
+      "key": "ip_licence",
+      "label": "IP and licensing",
+      "type": "text",
+      "value": "Nothing visible on the site: no terms, no licence for user-uploaded receipts and photos, no statement on who owns the pantry data. The 'Terms' on the sign-up page are not linked. I would need the actual terms to say anything useful."
+    },
+    {
+      "key": "consumer_law",
+      "label": "Consumer law",
+      "type": "list",
+      "value": [
+        "Headline pricing: $3.99 and $6.99 'per month' that can only be had by paying a year up front; the monthly-payer price is in a collapsed FAQ. This is the shape of drip pricing and of misleading price presentation under the UK consumer protection rules, and the CMA's guidance on pricing practices addresses it directly",
+        "Prices shown excluding tax. For a UK consumer the price shown must be the price payable including tax",
+        "Card-required 'free' trial that converts to a paid annual plan: the conversion terms are in 12 px grey footnote text, the landing page says only 'Free for 14 days'. The key terms should be given clearly and prominently before the customer commits",
+        "Subscription contract rules for pre-contract information, reminder notices and exit: as I understand it the UK subscription regime under the DMCC Act 2024 is due to start; I would need to check whether it is in force, but the reminder and cancellation requirements are exactly what this flow lacks. The reminder email three days before is a FAQ promise, not a term",
+        "No cancellation route described anywhere; 'cancelled before day 14' is ambiguous as to whether the charge happens on day 14 or on day 15",
+        "Cooling-off: for digital subscriptions the 14-day right to cancel and the express request to start the service during that period are not mentioned",
+        "'Get the app' and 'Start your free trial' while the app is 'soon': advertising a product not yet available",
+        "Unsubstantiated claims: 'Most households save more than the subscription'; anonymous beta quote",
+        "Partner-offer consent bundled with contract acceptance"
+      ]
+    },
+    {
+      "key": "exposure",
+      "label": "Actual exposure",
+      "type": "text",
+      "value": "Real for a live service in the UK. Regulator action (CMA, with fining powers under the DMCC Act, or Trading Standards) is the main risk, with chargeback and complaint volume the day-to-day one: people who forget to cancel a card-required trial are exactly the people who complain. Data protection exposure is secondary but cheap to trigger because the privacy page identifies no controller. I cannot size the exposure without seeing checkout after card entry, the Terms, and the real tax treatment; this is a demonstration site, so I am assessing the pattern, not any company."
+    },
+    {
+      "key": "severity",
+      "label": "Severity: low, medium, high, critical",
+      "type": "text",
+      "value": "high"
+    }
+  ]
+}

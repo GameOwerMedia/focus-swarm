@@ -1,0 +1,853 @@
+{
+  "version": 3,
+  "note": "Panel library for focus-swarm. Sizes are defaults; the cast picker overrides them. Every persona is fictional unless the user explicitly turns on real-people research for a panel that allows it (can_cast_real_people).",
+  "families": [
+    {
+      "id": "use",
+      "label": "People who use it"
+    },
+    {
+      "id": "spread",
+      "label": "People who sell or spread it"
+    },
+    {
+      "id": "decide",
+      "label": "People who fund, buy or approve it"
+    }
+  ],
+  "panels": [
+    {
+      "id": "general",
+      "label": "Everyday users",
+      "family": "use",
+      "accent": "#6c7cff",
+      "size": 10,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 1,
+      "min_skeptical": 3,
+      "question": "Could I use this at all, and would I ever want to?",
+      "spread": [
+        "at least one person under 20 and two over 55, the rest spread across 25-54",
+        "a tech-literacy ladder from 'asks their grandchild to install apps' to 'runs a home server', at least 2 on the bottom rung",
+        "at least 3 on a phone, 1 on a poor connection, 1 with an accessibility need, 1 on an old device or browser",
+        "at least 2 people for whom the price is a real decision",
+        "a first-timer, someone dragged in by a partner or colleague, someone who arrived by mistake, someone who tried a competitor",
+        "at least 2 people whose first language is not the product's language"
+      ]
+    },
+    {
+      "id": "commercial",
+      "label": "Commercial users 16-49",
+      "family": "use",
+      "accent": "#14b8a6",
+      "size": 10,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 1,
+      "min_skeptical": 3,
+      "question": "Does this survive contact with my actual workflow, and what would I drop for it?",
+      "spread": [
+        "age strictly 16-49, at least one aged 16-19 and one aged 45-49",
+        "everyone has a NAMED current tool to replace, including 'a spreadsheet' and 'I do it by hand'",
+        "solo freelancer, small studio, agency employee, in-house at a large company, student with a side hustle, someone whose employer picks their tools",
+        "at least 2 must justify the budget to somebody else",
+        "at least 2 judge on speed, 2 on quality, 1 on legal terms and data ownership"
+      ]
+    },
+    {
+      "id": "research",
+      "label": "Researchers",
+      "family": "decide",
+      "accent": "#a855f7",
+      "size": 10,
+      "can_cast_real_people": true,
+      "sees_brief": true,
+      "min_hostile": 1,
+      "min_skeptical": 3,
+      "question": "Is the claim true, is it new, and what breaks under scrutiny?",
+      "spread": [
+        "at least 3 from outside the product's home region",
+        "at least three distinct disciplines relevant to the product",
+        "at least 3 known critics of the category",
+        "at least 1 who works on evaluation and measurement",
+        "at least 1 from industry research rather than academia"
+      ],
+      "extra_block": {
+        "key": "science",
+        "label": "Scientific assessment",
+        "schema_ref": "AgentReport.science"
+      }
+    },
+    {
+      "id": "capital",
+      "label": "Capital",
+      "family": "decide",
+      "accent": "#f59e0b",
+      "size": 12,
+      "can_cast_real_people": true,
+      "sees_brief": true,
+      "min_hostile": 4,
+      "min_skeptical": 4,
+      "question": "Would I put money in, on what terms, and what do I want in return?",
+      "seats": [
+        "seed or pre-seed VC from the product's home region",
+        "international seed VC",
+        "Series A VC",
+        "angel with an operating background in exactly this domain",
+        "high-volume generalist angel",
+        "founder of a direct competitor",
+        "founder who exited in this category",
+        "corporate or strategic investor",
+        "C-level executive at a potential large customer",
+        "grant, public-fund or foundation decision-maker",
+        "distribution gatekeeper for this domain",
+        "hostile specialist, on record as a skeptic of this category"
+      ],
+      "spread": [
+        "at least 4 from outside the product's home country",
+        "at least 3 women",
+        "ticket sizes spanning at least two orders of magnitude"
+      ],
+      "extra_block": {
+        "key": "deal",
+        "label": "Deal terms",
+        "schema_ref": "AgentReport.deal"
+      }
+    },
+    {
+      "id": "marketing",
+      "label": "Marketing",
+      "family": "spread",
+      "accent": "#ec4899",
+      "size": 8,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 2,
+      "min_skeptical": 2,
+      "question": "Can I sell this, to whom, and at what acquisition cost?",
+      "seats": [
+        "CMO of a mid-size company",
+        "head of brand",
+        "growth lead at a startup",
+        "performance marketer who buys media",
+        "social media manager running accounts day to day",
+        "marketing manager at a corporation with a procurement process",
+        "CRM and lifecycle manager",
+        "one-person-business marketer with no budget"
+      ],
+      "spread": [
+        "from a one-person business to a corporation, budgets spanning three orders of magnitude",
+        "at least 2 judge only by numbers, at least 2 by brand",
+        "at least 1 who already burned out on a similar tool"
+      ],
+      "extra_block": {
+        "key": "brand",
+        "label": "Marketing read",
+        "fields": [
+          {
+            "key": "positioning_clarity",
+            "type": "int",
+            "label": "Positioning clarity 0-100"
+          },
+          {
+            "key": "differentiator",
+            "type": "string",
+            "label": "Real differentiator"
+          },
+          {
+            "key": "message_that_lands",
+            "type": "string",
+            "label": "Message that lands"
+          },
+          {
+            "key": "message_that_kills",
+            "type": "string",
+            "label": "Message that kills"
+          },
+          {
+            "key": "channels",
+            "type": "list",
+            "label": "Channels that would work"
+          },
+          {
+            "key": "cac_instinct",
+            "type": "string",
+            "label": "CAC instinct"
+          },
+          {
+            "key": "would_never_claim",
+            "type": "list",
+            "label": "What I would never claim"
+          }
+        ]
+      }
+    },
+    {
+      "id": "advertising",
+      "label": "Advertising",
+      "family": "spread",
+      "accent": "#f97316",
+      "size": 8,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 2,
+      "min_skeptical": 2,
+      "question": "Can I build a campaign from this, and would I be embarrassed to show it?",
+      "seats": [
+        "creative director at a network agency",
+        "art director",
+        "copywriter",
+        "strategist",
+        "media planner",
+        "account director answerable to the client",
+        "creative producer who costs out feasibility",
+        "owner of a creative boutique"
+      ],
+      "spread": [
+        "network agency versus boutique, at least two of each",
+        "at least 1 who cares only about festivals and awards, at least 1 only about sales",
+        "at least 1 who dislikes AI in advertising and says so plainly"
+      ],
+      "extra_block": {
+        "key": "creative",
+        "label": "Creative read",
+        "fields": [
+          {
+            "key": "the_idea",
+            "type": "string",
+            "label": "The idea I take from this"
+          },
+          {
+            "key": "the_line",
+            "type": "string",
+            "label": "The line I would write"
+          },
+          {
+            "key": "unusable",
+            "type": "list",
+            "label": "What is unusable"
+          },
+          {
+            "key": "craft_level",
+            "type": "int",
+            "label": "Craft level 0-100"
+          },
+          {
+            "key": "would_pitch_to_client",
+            "type": "bool",
+            "label": "Would pitch it to a client"
+          }
+        ]
+      }
+    },
+    {
+      "id": "consumers",
+      "label": "Consumers",
+      "family": "use",
+      "accent": "#22c55e",
+      "size": 12,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 2,
+      "min_skeptical": 3,
+      "question": "Would I buy it, at what price, and what would I buy instead?",
+      "spread": [
+        "segment by buying behaviour, not demographics: impulse buyer, comparison shopper, brand loyalist, deal hunter, buys on recommendation, procrastinator",
+        "at least 3 with a real budget constraint",
+        "at least 2 buying for someone else",
+        "at least 1 who already owns a competing product and is happy with it"
+      ],
+      "extra_block": {
+        "key": "purchase",
+        "label": "Purchase decision",
+        "fields": [
+          {
+            "key": "would_pay",
+            "type": "bool",
+            "label": "Would pay"
+          },
+          {
+            "key": "price_point",
+            "type": "string",
+            "label": "Price I would call fair"
+          },
+          {
+            "key": "walk_away_price",
+            "type": "string",
+            "label": "Walk-away price"
+          },
+          {
+            "key": "alternative",
+            "type": "string",
+            "label": "What I would buy instead"
+          },
+          {
+            "key": "trigger",
+            "type": "string",
+            "label": "What would trigger the purchase"
+          },
+          {
+            "key": "barrier",
+            "type": "string",
+            "label": "What stops me"
+          }
+        ]
+      }
+    },
+    {
+      "id": "retail",
+      "label": "Retail and distribution",
+      "family": "spread",
+      "accent": "#0ea5e9",
+      "size": 8,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 2,
+      "min_skeptical": 3,
+      "question": "Would I stock it, at what margin, and who moves the volume?",
+      "seats": [
+        "category buyer at a retail chain",
+        "marketplace manager",
+        "regional distributor",
+        "reseller with their own customer base",
+        "specialist shop owner",
+        "partner channel manager",
+        "logistics and returns lead",
+        "e-commerce buyer"
+      ],
+      "extra_block": {
+        "key": "commerce",
+        "label": "Commercial terms",
+        "fields": [
+          {
+            "key": "would_stock",
+            "type": "bool",
+            "label": "Would stock it"
+          },
+          {
+            "key": "margin",
+            "type": "string",
+            "label": "Margin required"
+          },
+          {
+            "key": "volume",
+            "type": "string",
+            "label": "Realistic volume"
+          },
+          {
+            "key": "terms",
+            "type": "list",
+            "label": "Terms"
+          },
+          {
+            "key": "blockers",
+            "type": "list",
+            "label": "What blocks it"
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2b",
+      "label": "B2B buyers",
+      "family": "decide",
+      "accent": "#818cf8",
+      "size": 8,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 2,
+      "min_skeptical": 3,
+      "question": "Can I push this through procurement, who signs, and how long does it take?",
+      "seats": [
+        "head of procurement",
+        "IT decision-maker",
+        "head of the department that would use it",
+        "budget controller",
+        "information security lead",
+        "implementation project manager",
+        "end user with no say in the decision",
+        "external consultant who recommends tools"
+      ],
+      "extra_block": {
+        "key": "procurement",
+        "label": "Procurement path",
+        "fields": [
+          {
+            "key": "budget_owner",
+            "type": "string",
+            "label": "Budget owner"
+          },
+          {
+            "key": "approval_path",
+            "type": "list",
+            "label": "Approval path"
+          },
+          {
+            "key": "cycle_length",
+            "type": "string",
+            "label": "Decision cycle"
+          },
+          {
+            "key": "security_review",
+            "type": "string",
+            "label": "What fails security review"
+          },
+          {
+            "key": "pilot_terms",
+            "type": "string",
+            "label": "Pilot terms"
+          },
+          {
+            "key": "contract_blockers",
+            "type": "list",
+            "label": "Contract blockers"
+          }
+        ]
+      }
+    },
+    {
+      "id": "enterprise_it",
+      "label": "Enterprise IT",
+      "family": "decide",
+      "accent": "#3b82f6",
+      "size": 6,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 2,
+      "min_skeptical": 2,
+      "question": "Would I let this into my stack, and what happens when it breaks?",
+      "seats": [
+        "CISO",
+        "integration architect",
+        "identity and SSO administrator",
+        "SRE responsible for availability",
+        "data protection officer",
+        "operations manager accountable for cost"
+      ],
+      "extra_block": {
+        "key": "techops",
+        "label": "Technical assessment",
+        "fields": [
+          {
+            "key": "integration",
+            "type": "list",
+            "label": "Integrations required"
+          },
+          {
+            "key": "auth",
+            "type": "string",
+            "label": "Identity and SSO"
+          },
+          {
+            "key": "data_residency",
+            "type": "string",
+            "label": "Data residency"
+          },
+          {
+            "key": "sla_expectation",
+            "type": "string",
+            "label": "SLA expected"
+          },
+          {
+            "key": "failure_modes",
+            "type": "list",
+            "label": "Failure modes"
+          },
+          {
+            "key": "hard_no",
+            "type": "list",
+            "label": "Hard no"
+          }
+        ]
+      }
+    },
+    {
+      "id": "regulators",
+      "label": "Regulators and counsel",
+      "family": "decide",
+      "accent": "#ef4444",
+      "size": 6,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 3,
+      "min_skeptical": 2,
+      "question": "On what legal basis does this operate, and who is liable?",
+      "seats": [
+        "data protection lawyer",
+        "IP and licensing lawyer",
+        "consumer law specialist",
+        "compliance officer at a regulated institution",
+        "advertising and labelling lawyer",
+        "market supervision official"
+      ],
+      "extra_block": {
+        "key": "compliance",
+        "label": "Legal assessment",
+        "fields": [
+          {
+            "key": "legal_basis",
+            "type": "string",
+            "label": "Legal basis"
+          },
+          {
+            "key": "data_flows",
+            "type": "list",
+            "label": "Questionable data flows"
+          },
+          {
+            "key": "ip_licence",
+            "type": "string",
+            "label": "IP and licensing"
+          },
+          {
+            "key": "consumer_law",
+            "type": "list",
+            "label": "Consumer law"
+          },
+          {
+            "key": "exposure",
+            "type": "string",
+            "label": "Actual exposure"
+          },
+          {
+            "key": "severity",
+            "type": "string",
+            "label": "Severity: low, medium, high, critical"
+          }
+        ]
+      }
+    },
+    {
+      "id": "education",
+      "label": "Institutions and education",
+      "family": "use",
+      "accent": "#10b981",
+      "size": 8,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 1,
+      "min_skeptical": 3,
+      "question": "Would I bring this into the institution, and can I justify the spend?",
+      "seats": [
+        "teacher who runs classes",
+        "head teacher with a budget",
+        "university lecturer",
+        "purchasing coordinator at an institution",
+        "librarian or community arts organiser",
+        "official who awards grants",
+        "parent on the parents' council",
+        "pupil or student as the end user"
+      ],
+      "extra_block": {
+        "key": "institutional",
+        "label": "Institutional read",
+        "fields": [
+          {
+            "key": "curriculum_fit",
+            "type": "string",
+            "label": "Curriculum fit"
+          },
+          {
+            "key": "purchase_path",
+            "type": "string",
+            "label": "How I purchase it formally"
+          },
+          {
+            "key": "safeguarding",
+            "type": "list",
+            "label": "Safeguarding"
+          },
+          {
+            "key": "accessibility",
+            "type": "list",
+            "label": "Accessibility"
+          },
+          {
+            "key": "justification",
+            "type": "string",
+            "label": "Justification to my superior"
+          }
+        ]
+      }
+    },
+    {
+      "id": "press",
+      "label": "Press and critics",
+      "family": "spread",
+      "accent": "#eab308",
+      "size": 8,
+      "can_cast_real_people": true,
+      "sees_brief": true,
+      "min_hostile": 2,
+      "min_skeptical": 3,
+      "question": "Is there a story here, what is it, and would I rather write it against you?",
+      "seats": [
+        "technology journalist who covers this category",
+        "trade critic with a settled opinion",
+        "editor who decides what runs",
+        "business journalist who looks at the numbers",
+        "newsletter writer with a loyal audience",
+        "industry podcaster",
+        "investigative reporter looking for the hole",
+        "local or niche editor"
+      ],
+      "extra_block": {
+        "key": "story",
+        "label": "Media read",
+        "fields": [
+          {
+            "key": "angle",
+            "type": "string",
+            "label": "My angle"
+          },
+          {
+            "key": "headline",
+            "type": "string",
+            "label": "The headline I would write"
+          },
+          {
+            "key": "would_cover",
+            "type": "bool",
+            "label": "Would cover it"
+          },
+          {
+            "key": "missing_for_story",
+            "type": "list",
+            "label": "What is missing for a story"
+          },
+          {
+            "key": "the_hostile_version",
+            "type": "string",
+            "label": "The hostile version of this piece"
+          }
+        ]
+      }
+    },
+    {
+      "id": "creators",
+      "label": "Creators and industry",
+      "family": "use",
+      "accent": "#d946ef",
+      "size": 10,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 2,
+      "min_skeptical": 3,
+      "question": "Does this survive a real production, and what exactly does it replace?",
+      "seats": [
+        "director",
+        "commercial editor",
+        "camera operator or cinematographer",
+        "producer who owns the schedule and budget",
+        "colourist or post-production lead",
+        "sound engineer",
+        "graphic designer",
+        "solo creator who publishes daily",
+        "studio head who decides on tools",
+        "craftsperson who is hostile to AI in their field"
+      ],
+      "extra_block": {
+        "key": "craft",
+        "label": "Craft read",
+        "fields": [
+          {
+            "key": "replaces",
+            "type": "string",
+            "label": "What it actually replaces"
+          },
+          {
+            "key": "breaks_at",
+            "type": "list",
+            "label": "Where it breaks in real production"
+          },
+          {
+            "key": "output_quality",
+            "type": "int",
+            "label": "Output quality 0-100"
+          },
+          {
+            "key": "workflow_fit",
+            "type": "string",
+            "label": "Pipeline fit"
+          },
+          {
+            "key": "would_bill_client",
+            "type": "bool",
+            "label": "Would bill a client for this"
+          }
+        ]
+      }
+    },
+    {
+      "id": "community",
+      "label": "Community and influencers",
+      "family": "spread",
+      "accent": "#06b6d4",
+      "size": 8,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 2,
+      "min_skeptical": 2,
+      "question": "Would I tell my people about this, and would it cost me credibility?",
+      "seats": [
+        "short-video creator",
+        "long-form video creator",
+        "moderator of a large community",
+        "photo-first social creator",
+        "organiser of a topic group",
+        "micro-influencer with a niche",
+        "streamer",
+        "vocal critic of the category with a following"
+      ],
+      "extra_block": {
+        "key": "spread",
+        "label": "Distribution potential",
+        "fields": [
+          {
+            "key": "would_post",
+            "type": "bool",
+            "label": "Would post it"
+          },
+          {
+            "key": "format",
+            "type": "string",
+            "label": "In what format"
+          },
+          {
+            "key": "hook",
+            "type": "string",
+            "label": "Three-second hook"
+          },
+          {
+            "key": "why_it_flops",
+            "type": "string",
+            "label": "Why it flops"
+          },
+          {
+            "key": "credibility_risk",
+            "type": "string",
+            "label": "Credibility risk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "talent",
+      "label": "Talent",
+      "family": "use",
+      "accent": "#94a3b8",
+      "size": 6,
+      "can_cast_real_people": false,
+      "sees_brief": false,
+      "min_hostile": 1,
+      "min_skeptical": 2,
+      "question": "Would I work here, and what does it do to my CV?",
+      "seats": [
+        "senior engineer with offers on the table",
+        "designer building a portfolio",
+        "person at the start of their career",
+        "freelancer considering a permanent role",
+        "recruiter judging how sellable this employer is",
+        "person who left a similar company"
+      ],
+      "extra_block": {
+        "key": "employer",
+        "label": "Employer read",
+        "fields": [
+          {
+            "key": "would_join",
+            "type": "bool",
+            "label": "Would join"
+          },
+          {
+            "key": "signals",
+            "type": "list",
+            "label": "What this signals about them"
+          },
+          {
+            "key": "comp_expectation",
+            "type": "string",
+            "label": "Comp expectation"
+          },
+          {
+            "key": "red_flags",
+            "type": "list",
+            "label": "Red flags"
+          }
+        ]
+      }
+    }
+  ],
+  "presets": [
+    {
+      "id": "full",
+      "label": "Full default",
+      "panels": {
+        "general": 10,
+        "commercial": 10,
+        "research": 10,
+        "capital": 12
+      }
+    },
+    {
+      "id": "lite",
+      "label": "Lite",
+      "panels": {
+        "general": 4,
+        "commercial": 4,
+        "research": 3,
+        "capital": 4
+      }
+    },
+    {
+      "id": "gotomarket",
+      "label": "Go to market",
+      "panels": {
+        "consumers": 12,
+        "marketing": 8,
+        "advertising": 6,
+        "community": 8
+      }
+    },
+    {
+      "id": "raise",
+      "label": "Pre-raise",
+      "panels": {
+        "capital": 12,
+        "research": 6,
+        "commercial": 8
+      }
+    },
+    {
+      "id": "enterprise",
+      "label": "Enterprise sale",
+      "panels": {
+        "b2b": 8,
+        "enterprise_it": 6,
+        "regulators": 6,
+        "commercial": 6
+      }
+    },
+    {
+      "id": "launch",
+      "label": "Public launch",
+      "panels": {
+        "general": 10,
+        "press": 8,
+        "community": 8,
+        "marketing": 6
+      }
+    },
+    {
+      "id": "creative",
+      "label": "Creator tool",
+      "panels": {
+        "creators": 10,
+        "commercial": 8,
+        "community": 6,
+        "capital": 6
+      }
+    }
+  ]
+}

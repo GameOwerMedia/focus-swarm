@@ -1,0 +1,97 @@
+{
+  "id": "consumers01",
+  "group": "consumers",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "opened the landing page and read the hero, six feature blocks, the quote and the video section",
+    "opened /pricing at phone width and read the plan table, the footnote and the four questions",
+    "opened the sign-up page and read the form fields, the step indicator and the small print",
+    "opened the privacy page and read it",
+    "checked the stylesheet for how the pricing table behaves under 760 px",
+    "attempted the sign-up in my head: would type an email, stopped before the card number field"
+  ],
+  "name": "Hannah Brooks",
+  "age": 36,
+  "role": "Pharmacist, mother of two",
+  "location": "Columbus, Ohio, US",
+  "real_person": false,
+  "disposition": "neutral",
+  "first_10s": "Okay, 'know what's in the fridge before you shop.' Fine. Cute phone mockup with a flat of roommates, Sam, Priya and Jo. That's not me, I have two kids and a husband. Oat milk, mustard times three, ha. I already have a shared list app with Dave on it and it's free. So what does this do that mine doesn't? Scan a receipt, expiry nudges. Hm. Show me the price.",
+  "journey": [
+    "Landed on the home page. Hero is aimed at flatshares, the example pantry is 'Flat 3B' with roommates. Took a second to decide it could be for a family of four.",
+    "Scrolled the features. Expiry nudges and the waste report are the two things my current app does not do. 'Partner offers' based on my pantry made me pause.",
+    "Hit 'See how it works' and it jumps to a box that says the product tour video is coming soon. Nothing to watch.",
+    "Opened Pricing. On my phone the table is wider than the screen: I see the Starter column and half of Household. I had to swipe sideways to find out what I would actually pay. The price for Household is cut off at '$3.99/m'.",
+    "Swiped across and found $3.99/mo for Household (up to 5, fits us) but the asterisk says billed annually, $47.88 a year. Monthly is $5.99, hidden in the FAQ accordion.",
+    "Opened the card question: 'It keeps the trial smooth for your whole household.' That is not an answer.",
+    "Tapped 'Start 14-day trial'. Sign-up asks for email, a 12-character password and the card number on the very first screen, before I have seen the app do anything. It says I won't be charged today and the plan starts after the trial unless I cancel.",
+    "Stopped there. Would not type the card number. Went to the privacy page instead and read the partner insights line."
+  ],
+  "usability": {
+    "score": 55,
+    "completed_main_task": false,
+    "blockers": [
+      "The trial needs a card number on the first form, and the product has not shown me anything working yet. I stop there.",
+      "'Free for 14 days' and 'Web app works today' exist, but there is no way to try it without a card."
+    ],
+    "friction": [
+      "The pricing table is wider than a 390 px screen. The two paid plans are cut off and I have to scroll sideways to read the price and the button.",
+      "The real price is a footnote: $3.99 is the annual price spread over 12 months, billed as $47.88 at once. Monthly ($5.99) is only in a collapsed FAQ.",
+      "The sign-up page says 'Household plan ($47.88/year)' but I never chose Household on that page. It chose for me.",
+      "Step indicator says there are three steps, one of them 'Invite your household', but nothing tells me whether I can add Dave before I enter a card.",
+      "The hero example is a flatshare. Nothing speaks to a family of four doing a weekly shop.",
+      "Product tour is 'coming soon', so I cannot see the scan feature working.",
+      "iOS app is 'soon'. I am on an iPhone and the only thing that works today is a web app."
+    ]
+  },
+  "works": [
+    "Pricing tiers are clear in content: the member cap (5 for Household) matches a family of four.",
+    "The sign-up page states in plain words that I will not be charged today and which plan and amount follow.",
+    "Expiry nudges plus recipes that use the item up, and the waste report, are real things I do not get from my free list app.",
+    "Privacy page is short and readable, and it tells me receipts are kept 30 days."
+  ],
+  "fails": [
+    "Card up front for a trial on a product I have not seen work, with the reason given as 'keeps the trial smooth for your whole household'.",
+    "Pricing on a phone: half the table is off screen.",
+    "'Monthly' price is buried; the headline price is only valid if I pay a year at once.",
+    "The partner offers line: 'we may share anonymised and aggregated shopping insights with retail and brand partners', and the sign-up agrees me to partner offers by default in the small print.",
+    "No video, no demo, no screenshot of the real app, only a decorative phone mockup."
+  ],
+  "missing": [
+    "A way to try it without a card, or a demo of the scan.",
+    "Anything about importing a list from another list app, or about my husband joining without a second paid account.",
+    "A family example instead of a flatshare.",
+    "How cancelling works and where: 'Settings, Billing' is mentioned only for switching to monthly.",
+    "Whether the iPhone experience (the web app) works as an installed app, with notifications for expiry."
+  ],
+  "said": [
+    "Okay, the price is fine. Four dollars a month is nothing. But why do you want my card before I've seen it do anything?",
+    "I tried to look at the pricing on my phone and half the table was off the screen. Does nobody test this on a phone?",
+    "My list app is free and Dave already uses it. You'd need to give me something it can't do, and 'expiry nudges' is the only thing I'd even care about.",
+    "It's $47.88 a year, not $3.99 a month. Just say that.",
+    "'Keeps the trial smooth for your whole household.' That's a non-answer. It's so I forget to cancel.",
+    "Show me a video. Anything. 'Coming soon' on a product I'm supposed to pay for?"
+  ],
+  "unsaid": [
+    "I read the annual-billing footnote and the 'converts to a paid annual plan unless cancelled before day 14' line, and I recognised the pattern straight away. I have been caught by it before with the recipe app and I would put a reminder in my phone for day 12 even if I did sign up. That tells you I do not trust the trial, not that I want it.",
+    "The real reason I would not switch is not the product. It is that Dave would have to move, and I do not want to be the one asking him to download another app and re-enter the pantry. Nothing on this site lets me hand him anything or try it with him.",
+    "I did not like the partner offers line in the privacy notice. I would not say it out loud, but 'based on your pantry' and a receipt scanner means they know what we buy, and I work in healthcare. I would not put a receipt in there.",
+    "I closed the tab at the sign-up form without typing anything. I would not come back to it. If I did, I would have left the pricing page open in a tab for a week as a 'maybe later' and then closed it.",
+    "The roommates in the hero made me feel the product was for 25-year-olds. I did not mention it because it is a small thing, but it is why I never got excited.",
+    "If the card step had been after a taste of the app, I would probably have gone through. The card wall is the thing that turned 'maybe' into 'not today'."
+  ],
+  "verdict": {
+    "decision": "maybe",
+    "why": "The idea is solid and the price is fair, but I am happy with a free shared list, switching means persuading my husband, and the trial asks for a card on the first screen before I have seen anything work. On my phone I could not even read the paid plans without swiping sideways.",
+    "what_would_flip": "A trial without a card (or a demo/video that shows scan and expiry nudges working), pricing readable on a phone with the monthly price next to the annual one, and a way to bring Dave in without a second paid account."
+  },
+  "extra": [
+    { "key": "would_pay", "label": "Would pay", "type": "bool", "value": false },
+    { "key": "price_point", "label": "Price I would call fair", "type": "text", "value": "About $3.99 a month, but only if it is clear that this is what I pay per month and I can pay monthly. Around $30 to $40 a year for the family plan is where I stop thinking about it." },
+    { "key": "walk_away_price", "label": "Walk-away price", "type": "text", "value": "Anything over about $6 a month for the Household plan, or $48 a year billed up front without seeing the product work first. The $5.99 monthly price is already too much next to a free app." },
+    { "key": "alternative", "label": "What I would buy instead", "type": "text", "value": "Nothing. I would stay on my free shared shopping-list app with Dave and the recipe app I already pay for." },
+    { "key": "trigger", "label": "What would trigger the purchase", "type": "text", "value": "Seeing the barcode scan and the expiry nudge work in a real demo, a trial with no card, and a way to bring Dave in so he does not have to be convinced separately. A throwaway pantry from a family of four rather than a flatshare would help." },
+    { "key": "barrier", "label": "What stops me", "type": "text", "value": "Card number on the first form, a free competitor I am already happy with, Dave having to switch too, and the privacy notice saying my receipts feed partner insights." }
+  ]
+}

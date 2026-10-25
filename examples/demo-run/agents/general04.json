@@ -1,0 +1,100 @@
+{
+  "id": "general04",
+  "group": "general",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "Opened the landing page and read it top to bottom: hero, six feature boxes, quote, video block, footer",
+    "Opened the pricing page, read the plan table and the small print under it, expanded the four FAQ questions by reading their text",
+    "Looked at the pricing page rendered at laptop width and at phone width (390 px)",
+    "Opened the sign-up page and read every field, the step line and the sentence above the button",
+    "Tried the Starter 'Start free' button and the 14-day trial buttons: all go to the same sign-up form with card fields",
+    "Opened the privacy page and read all five points",
+    "Read the page styling for text colours and the red/green tag colours, and for what happens to the table below 760 px",
+    "Did not type anything into the form and stopped at the card number field"
+  ],
+  "name": "Harald Nygaard",
+  "age": 57,
+  "role": "Self-employed electrician",
+  "location": "Bergen, Norway",
+  "real_person": false,
+  "background": "Self-employed electrician, lives alone, cooks properly and wastes little. Arrived by mistake from a search for a pantry shelving unit.",
+  "history": "Has been sold subscriptions for things a notebook does, and resents it.",
+  "disposition": "hostile",
+  "first_10s": "Hylle. Jeg lette etter en hylle til spiskammerset, ikke en app. 'Know what's in the fridge before you shop.' Jeg vet hva som er i kjoleskapet mitt, jeg apner det. Phone picture with 'Dijon mustard x3 stop!' Ha. Fine, that one is a bit true. But 'shared with Sam, Priya and Jo' - I live alone. This is not for me. Button says free trial, and a trial usually means a card. Let me see the price before I leave.",
+  "journey": [
+    "Landed on the front page expecting shelves, found a pantry list app. Almost left at once.",
+    "Read the feature boxes. Scan, nudges, shared list, shopping list: all things a notebook and a magnet on the fridge do. 'Partner offers based on your pantry' made me stop for a second.",
+    "Clicked Pricing. Headline says $3.99 per month. Small grey print under the table says billed annually, $47.88 a year. So the big number is not what I would pay per month.",
+    "Opened the FAQ. Monthly is $5.99, not $3.99. Asked 'why do you need my card' and the answer does not answer it.",
+    "Pressed Start free on the Starter plan, the one that says $0. It went to the same sign-up as the trial: email, a password of twelve characters, and card number, expiry, CVC. So the free plan is not free to start.",
+    "Read the line above the button: no charge today, then Household at $47.88 a year starts after the trial. I never chose Household, it was chosen for me.",
+    "Read the privacy page. Anonymised and aggregated shopping insights go to retail and brand partners, and the sign-up says agreeing to the terms includes partner offers. Closed it.",
+    "At phone width the plan table is wider than the screen: only Starter shows, and the Household and Family+ columns with the trial button are cut off to the right. A person on a phone sees the free plan and a sliver of the next one.",
+    "Stopped at the card number field. Did not type anything."
+  ],
+  "usability": {
+    "score": 15,
+    "completed_main_task": false,
+    "blockers": [
+      "Every route to the product, including the $0 Starter plan, ends at a form that asks for card number, expiry and CVC. I could not find a way to try it without a card, so I stopped.",
+      "The front page says the web app works today but there is no link to it anywhere. 'Get the app' goes to the sign-up form, not to an app or a store.",
+      "The product tour video is a dark box saying coming soon, so there is no way to see what it does without paying details."
+    ],
+    "friction": [
+      "$3.99 per month is the big number, but you are billed $47.88 for a year. Monthly is $5.99, and that is only found in the FAQ. Three different prices for the same plan.",
+      "Sign-up silently picks the Household plan. There is no plan choice on the form, and Starter and the trial go to the same page.",
+      "Step line says '3. Invite your household'. Nothing says what happens if you are one person.",
+      "The FAQ answer to 'why do you need my card' is 'it keeps the trial smooth', which is not a reason.",
+      "Small grey text on a light background is hard to read: the line under the headline, the small print about annual billing and auto-conversion, the note under the hero buttons. The 'trial converts to a paid annual plan' warning is in the faintest text on the page.",
+      "Expiry tags in the phone mock-up are red against green. I cannot tell 'warn' from 'plenty' by colour, only by the word, and some tags have no word that helps.",
+      "At phone width the plan table scrolls sideways and hides the paid plans and their buttons."
+    ]
+  },
+  "works": [
+    "The headline is plain and I understood the idea in one read.",
+    "The price table is simple to read on a laptop: three columns, what you get, one button each.",
+    "The privacy page is short and in ordinary words. It tells me everybody in the household sees everything, and that receipts are kept 30 days.",
+    "The sign-up says 'you won't be charged today' near the top, and the pricing page says trial converts unless cancelled before day 14. At least it is written down.",
+    "The sign-up form is short and the labels are large enough to read."
+  ],
+  "fails": [
+    "A free plan that wants a card is not a free plan. A $0 button leads to a card form.",
+    "The price is shown as per month but billed per year, with the truth in grey small print.",
+    "The data sharing is bundled into the sign-up agreement: 'including partner offers'. I am asked to agree to my pantry being turned into marketing data before I have seen the product.",
+    "Nothing on the site shows the product working: a drawn phone, a quote from an unnamed 'beta household of four', and a video that does not exist.",
+    "Footer says it is a fictional product for demonstrations. If so, who am I paying?"
+  ],
+  "missing": [
+    "A real way to use it with no card, for one person, and see the list.",
+    "An export, so my list is not locked in. A plain note on what I keep if I stop paying.",
+    "A clear statement that one person can use it alone and what the 50-item limit means in a real kitchen.",
+    "Where to cancel, and how, before I give the card.",
+    "A link to the web app that is said to work today.",
+    "A price in kroner, or at least a clear statement of tax for Norway."
+  ],
+  "said": [
+    "Jeg lette etter en hylle, ikke et abonnement pa spiskammerset mitt.",
+    "A notebook on the door costs nothing and never asks for my card.",
+    "It says free for 14 days, then it wants a card number. That is not free, that is a trap with a calendar.",
+    "$3.99 a month, until you read the grey text and it is $47.88 a year up front. And $5.99 if you want to pay monthly. Pick one number and say it.",
+    "I pressed the button for the free plan and got asked for my credit card. Seriously.",
+    "'We will email you three days before your trial ends.' Fine. Then I have to remember to cancel. That is their whole business.",
+    "Partner offers based on what is in my pantry. No thanks. What I eat is none of a supermarket's business.",
+    "Do I really need an app to know I have three jars of mustard? Open the cupboard."
+  ],
+  "unsaid": [
+    "The mustard joke landed. I have more than one jar of something and it irritated me that it was right. I would not tell anyone.",
+    "I live alone and the whole page is about sharing with Sam, Priya and Jo. It made my kitchen feel like the wrong kind of kitchen, a bit empty. I closed the tab rather than read more.",
+    "I could not tell the red tags from the green ones in the picture. I stopped trying to read the picture and just decided it was not for me. I would never say that I could not read it, I would just say it looked like nothing.",
+    "I read the grey print on the pricing page twice and had to lean in. A company that puts the thing I need to know in the lightest text on the page has decided I should not read it. That decided it for me more than the price did.",
+    "Hovered over the $0 button hoping it would be honest. When it went to a card form I felt a bit stupid for expecting otherwise, and that anger is why I would warn my friends off rather than just shrug.",
+    "I would not put my card in even if I wanted the product. I have been burned by trials I forgot to cancel and I do not trust myself on day 13.",
+    "The tab with the pantry shelf search is still open. This one is gone. I never did find a shelf."
+  ],
+  "verdict": {
+    "decision": "no",
+    "why": "I am not the target customer, and the site gave me no reason to become one. The only way in is a card form, even for the $0 plan. The price is quoted per month but charged per year. The data-sharing is tied into the sign-up. Everything it does, a pencil and a paper list does, for free.",
+    "what_would_flip": "A real, working free version for one person with no card, a single honest price shown with the yearly figure first, and partner data sharing off by default and switched on only if I choose it. Even then I would probably keep the notebook."
+  }
+}

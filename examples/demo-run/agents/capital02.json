@@ -1,0 +1,129 @@
+{
+  "id": "capital02",
+  "group": "capital",
+  "visited": true,
+  "visit_method": "http",
+  "evidence": [
+    "opened the landing page and read the full text and the feature tiles",
+    "opened /pricing and read the plan table, the footnote and all four FAQ answers",
+    "opened /signup and read every field, the step line and the small print under the button",
+    "opened /privacy and read the five bullets, looking for what is said about retail partners",
+    "looked at the rendered landing, pricing and sign-up pages at desktop width, and the landing and pricing pages at phone width (390 px)",
+    "read the stylesheet for the phone breakpoint, the minimum table width and the text colour used for small print",
+    "did not find a phone-width view of the sign-up page, so I judged it from the stylesheet and the markup",
+    "attempted the main task: walk the sign-up path as far as the card fields; I would have typed an email and stopped at the card number"
+  ],
+  "name": "Daniel Hoffmann",
+  "age": 55,
+  "role": "angel investor, former grocery retail executive",
+  "org": "independent angel",
+  "location": "Munich, Germany",
+  "real_person": false,
+  "background": "Twenty years in grocery retail, last as head of loyalty at a large chain. Invests 25-50k EUR per deal.",
+  "history": "Built a loyalty data business and knows exactly what retailers pay for basket data and what they refuse to pay for.",
+  "disposition": "skeptical",
+  "first_10s": "Fridge, mustard, nice. Friendly. Fine. Where is the money? Okay, six tiles, the last one says 'Partner offers, based on your pantry'. There it is. Nobody says it on the front page, they put it in tile six next to the waste report. And the 'saves more than the subscription' line has no number. Quote from 'a beta household of four'. Of course.",
+  "journey": [
+    "Landed on the home page, read the headline, skipped the phone mock-up, went straight down to the six tiles and stopped at 'Partner offers'.",
+    "Clicked 'See how it works': it scrolls to a black box saying 'Product tour video coming soon'. Nothing to see. The text says the web app works today but no link opens it.",
+    "Opened Pricing. Household $3.99/mo with an asterisk, so I read the footnote: billed annually, $47.88. Opened the FAQ and only there found the real monthly price, $5.99. That is a 50 percent gap between the headline and the real monthly price.",
+    "Opened 'Why do you need my card': the answer is 'it keeps the trial smooth for your whole household'. That is not an answer, that is a conversion tactic.",
+    "Opened Sign-up from the Household trial button. Email, password, card number, expiry, CVC, all on the first screen, before I know whether the app is any good. 'You won't be charged today' and straight after, the annual plan starts unless I cancel. No cancel link, no mention of how to cancel.",
+    "Read the small print under the button: Terms, Privacy notice 'including partner offers'. Consent is bundled with the contract, no separate box.",
+    "Went to the privacy page to see what the partner sharing actually is: 'anonymised and aggregated shopping insights with retail and brand partners'. No partner named, no description of the data, no aggregation threshold. Stopped there. I did not enter a card."
+  ],
+  "usability": {
+    "score": 40,
+    "completed_main_task": false,
+    "blockers": [
+      "The trial cannot be started without a full card number, expiry and CVC on the first screen. I would not hand over a card to a pantry app with no product visible, no video and no web app link.",
+      "No route into the web app, which the home page says 'works today'. The only way in is the card-gated trial.",
+      "On a phone the pricing table is wider than the screen: the Family+ column and the Household price suffix are cut off and the sideways scroll is not signalled in any way."
+    ],
+    "friction": [
+      "On a phone the top navigation is reduced to the single 'Get the app' button: Pricing and Privacy disappear, and on the sign-up page there is not even that button, so the only way to the privacy notice is the small link under the button.",
+      "Headline price $3.99 versus real monthly price $5.99, which sits inside a collapsed FAQ.",
+      "The sign-up form quotes the Household annual plan but offers no plan choice and no monthly option.",
+      "Step line says three steps (account, payment, invite) but everything sits in one form; I cannot tell where payment ends and the household begins.",
+      "Small print and sub-headings are pale grey on off-white, hard to read on an iPad in daylight, and the footnote with the annual billing is the palest text on the page.",
+      "The sign-up page has no link to Terms (the word is not clickable) and no link to a cancellation page."
+    ]
+  },
+  "works": [
+    "The pricing page is short and the plan table is readable on a wide screen.",
+    "The sign-up form states, above the fields, that the plan starts after the trial unless cancelled and gives the annual amount ($47.88). That is more honest than most.",
+    "The privacy page is short and says in plain words that data is shared with retail and brand partners. They did not bury it completely.",
+    "Households see who added what: a real retention mechanism, and it is stated openly."
+  ],
+  "fails": [
+    "Partner offers is the only line that could make this a business beyond a $48 subscription, and it is given one tile and one bullet. The consent is bundled into the terms sentence under the button with no separate tick box, which would not survive a GDPR review in Germany.",
+    "'Anonymised and aggregated' without any threshold. Pantry data from a flatshare of three is not anonymous: household names and emails sit in the same account.",
+    "'Most major supermarket receipts in the US and UK' with no list. Receipt OCR is the whole data engine and no retailer is named.",
+    "'Most households save more than the subscription' with no number behind it.",
+    "Trial with a card, converting to an annual plan, and monthly price hidden. This is the pattern that produces chargebacks and one-star reviews.",
+    "Unattributed beta quote, product tour video missing, no screenshots of the real app."
+  ],
+  "missing": [
+    "Any number: users, households, receipts scanned, trial-to-paid conversion, retention at day 30.",
+    "A named retail or brand partner, or an LOI, or even a sentence on who pays for partner offers and how much.",
+    "What data a retailer would receive, at what granularity, and what the consent looks like.",
+    "A link to the web app or a demo without a card.",
+    "A cancel-in-two-taps statement near the card fields.",
+    "Who the founders are. The site names a Ltd and an example.com e-mail address."
+  ],
+  "said": [
+    "Der Kühlschrank ist nett, aber ich suche die Erlösseite. Ich finde sie in Kachel sechs, 'Partner offers'. Das ist das eigentliche Geschäft, und es steht neben dem Abfallbericht. Interessant.",
+    "Three ninety-nine, asterisk, annual. The real monthly price is five ninety-nine and it sits in a collapsed FAQ. If I did that in loyalty I would have had the legal department in my office by Friday.",
+    "Card number on screen one, before I have seen a single screenshot of the app? No. Not on my iPad, not on a phone, not for a pantry list.",
+    "Anonymised and aggregated: I have heard that sentence a hundred times. Aggregated over how many households? Three flatmates buying oat milk is not a data set a retailer pays for.",
+    "Here is my problem. Retailers pay for basket data when it is tied to a loyalty ID, covers a big share of a retailer's shoppers, and arrives every week. You are asking me to believe that a pantry app with a barcode scanner gets that from a few thousand households. Show me one retailer who said yes.",
+    "Send me the conversion from trial to paid and the number of households active in week four. Then we talk."
+  ],
+  "unsaid": [
+    "The product idea is better than I want to admit. Receipt-level data from inside a household, with expiry, is richer than what my old loyalty card gave me: it shows what is thrown away, not only what is bought. A category manager would like that. I would not say it on a first call, because the first number I ask for decides who has the leverage.",
+    "The bundled consent line under the button is the thing I would show my lawyer friend in Munich, not the founders. If I put 40k into this and a data protection authority reads that sentence, my money pays for the fine and the rewrite of the consent flow.",
+    "I opened the privacy page expecting to be reassured and came away reading it as a sales document for the partner line: 'power offers and market research'. Market research is the euphemism for selling the data. I noticed it and I would never say so in front of the founders.",
+    "I did not type anything into the card field and I would not tell them that. I would simply close the tab. If a founder asked me why they never saw a sign-up from 'dhoffmann', the honest answer is that the card wall told me they are optimising a funnel, not a product.",
+    "The beta quote has no name. In my business that means the founders have no reference customer, and that is exactly the first thing I would check in a pre-seed. I would mention it only as 'I would like to speak to a beta user'.",
+    "On a phone, with Pricing gone from the navigation and the Family+ column off-screen, I would have given up before the card form. As an investor I would turn it into a note about founder attention to detail; as a person I would just feel the site was not made for people like me."
+  ],
+  "verdict": {
+    "decision": "maybe",
+    "why": "The data idea (receipt-level pantry and waste data inside the household) is real, but nothing on the site shows that a retailer would buy it, nothing shows that consumers will give card details to try it, and the consent for the data sharing is bundled and weak. At pre-seed I would take a call, not a cheque.",
+    "what_would_flip": "A signed LOI or a paid pilot from one grocery retailer or brand for aggregated pantry data, plus trial-to-paid and week-4 retention numbers from at least 2,000 active households, and a separate, unticked consent for partner data."
+  },
+  "deal": {
+    "entry": "CONDITIONAL",
+    "ticket": "30k EUR",
+    "valuation": "3.0 to 4.5 million EUR pre-money; I would not go above 4.5 million with no retailer revenue. Above 6 million I would only look at it after a paid pilot.",
+    "instrument": "Convertible note or SAFE with a 20 percent discount and a valuation cap of 4.5 million EUR; no uncapped notes.",
+    "conditions": [
+      "At least one grocery retailer or brand signs an LOI or a paid pilot for aggregated pantry data (minimum 25k EUR per year) before I wire.",
+      "At least 2,000 households active in week 4 and a trial-to-paid conversion of 25 percent or more among card-entered trials, shown from the real dashboard.",
+      "Partner-offer consent split from the Terms into a separate, unticked opt-in, with a cohort-size floor (no insight shared from fewer than 50 households) written into the privacy notice, before launch in the EU.",
+      "Monthly price shown next to the annual price on the pricing page and a cancel link in the trial confirmation e-mail."
+    ],
+    "red_lines": [
+      "Sale of household-level data, or any data tied to names or e-mail addresses, to any partner.",
+      "Consent for data sharing hidden inside terms acceptance.",
+      "Revenue model that depends on retailers paying for data from fewer than a few hundred thousand households, with no retailer yet named."
+    ],
+    "offers": [
+      "Introductions at two German grocery chains where I know the head of loyalty and the head of category insight personally (I will say which in a second call, not in a report).",
+      "A review of the data-sharing offer and a price list for retailers, based on what I sold and what I saw refused in my own loyalty data business.",
+      "Introduction to a data protection lawyer in Munich who has done a consent flow for a loyalty programme."
+    ],
+    "wants": [
+      "The founders to find out in six months whether one retailer pays for the data, before they build the meal planner.",
+      "The partner-offers line to become a real business with a named partner and a price, or to be dropped.",
+      "A clean consent flow that holds up in Germany."
+    ],
+    "refuses": [
+      "The company turning into a data broker with a pantry app as its front door.",
+      "Hiding the monthly price and the card requirement to inflate trial numbers.",
+      "Spending the round on paid acquisition before the retailer question is answered."
+    ],
+    "board_terms": "Information rights (monthly KPI e-mail), pro-rata right in the next round, an observer seat on the board is enough; no board seat at this ticket.",
+    "conviction": 4
+  }
+}

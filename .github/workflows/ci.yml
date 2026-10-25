@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.9", "3.13"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Manifests are valid JSON
+        run: python -c "import json; [json.load(open(p, encoding='utf-8')) for p in ('.claude-plugin/plugin.json', '.claude-plugin/marketplace.json')]"
+      - name: Smoke run on the recorded demo
+        run: |
+          python skills/focus-swarm/scripts/collect.py examples/demo-run
+          python skills/focus-swarm/scripts/build_board.py examples/demo-run --title Larder
+          python skills/focus-swarm/scripts/picker.py --outdir smoke --target https://example.com/ --preset lite --write
